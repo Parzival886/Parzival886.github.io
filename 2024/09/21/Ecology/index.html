@@ -1,0 +1,633 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Ecology | Jiale Zheng's Blog</title><meta name="author" content="Jiale Zheng"><meta name="copyright" content="Jiale Zheng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="$\mathcal{Lecture}$ $\mathcal{2}$ – $\mathcal{Autecology}$什么是个体生态学？ 个体（Individual）：在环境中生存和繁殖的生物体的基本单位。 适应度（Fitness）：生命体会很好地适应环境来达到高的存活率 个体生态学（Autecology）：是生态学的一个分支，它处理单个生物体或单个物种与其环境之间的生物关系。个体生态学关注个体生物">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ecology">
+<meta property="og:url" content="http://parzival886.github.io/2024/09/21/Ecology/index.html">
+<meta property="og:site_name" content="Jiale Zheng&#39;s Blog">
+<meta property="og:description" content="$\mathcal{Lecture}$ $\mathcal{2}$ – $\mathcal{Autecology}$什么是个体生态学？ 个体（Individual）：在环境中生存和繁殖的生物体的基本单位。 适应度（Fitness）：生命体会很好地适应环境来达到高的存活率 个体生态学（Autecology）：是生态学的一个分支，它处理单个生物体或单个物种与其环境之间的生物关系。个体生态学关注个体生物">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://parzival886.github.io/img/1.jpg">
+<meta property="article:published_time" content="2024-09-21T14:27:20.000Z">
+<meta property="article:modified_time" content="2024-09-21T14:34:03.105Z">
+<meta property="article:author" content="Jiale Zheng">
+<meta property="article:tag" content="course">
+<meta property="article:tag" content="note">
+<meta property="article:tag" content="Ecology">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://parzival886.github.io/img/1.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://parzival886.github.io/2024/09/21/Ecology/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>(()=>{
+      const saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+      
+      window.btf = {
+        saveToLocal: saveToLocal,
+        getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+          script.src = url
+          script.async = true
+          script.onerror = reject
+          script.onload = script.onreadystatechange = function() {
+            const loadState = this.readyState
+            if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+            script.onload = script.onreadystatechange = null
+            resolve()
+          }
+
+          Object.keys(attr).forEach(key => {
+            script.setAttribute(key, attr[key])
+          })
+
+          document.head.appendChild(script)
+        }),
+
+        getCSS: (url, id = false) => new Promise((resolve, reject) => {
+          const link = document.createElement('link')
+          link.rel = 'stylesheet'
+          link.href = url
+          if (id) link.id = id
+          link.onerror = reject
+          link.onload = link.onreadystatechange = function() {
+            const loadState = this.readyState
+            if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+            link.onload = link.onreadystatechange = null
+            resolve()
+          }
+          document.head.appendChild(link)
+        }),
+
+        addGlobalFn: (key, fn, name = false, parent = window) => {
+          const pjaxEnable = false
+          if (!pjaxEnable && key.startsWith('pjax')) return
+
+          const globalFn = parent.globalFn || {}
+          const keyObj = globalFn[key] || {}
+    
+          if (name && keyObj[name]) return
+    
+          name = name || Object.keys(keyObj).length
+          keyObj[name] = fn
+          globalFn[key] = keyObj
+          parent.globalFn = globalFn
+        }
+      }
+    
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+      
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })()</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":true,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Ecology',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-09-21 22:34:03'
+}</script><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (false) {
+    btf.addGlobalFn('pjaxSend', () => { preloader.initLoading() }, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', () => { preloader.endLoading() }, 'preloader_end')
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/1.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/15.jpg);"><nav id="nav"><span id="blog-info"><a href="/" title="Jiale Zheng's Blog"><span class="site-name">Jiale Zheng's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Ecology</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-21T14:27:20.000Z" title="发表于 2024-09-21 22:27:20">2024-09-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-21T14:34:03.105Z" title="更新于 2024-09-21 22:34:03">2024-09-21</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Courses-in-ZJU/">Courses in ZJU</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>13分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Ecology"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="mathcal-Lecture-mathcal-2-–-mathcal-Autecology"><a href="#mathcal-Lecture-mathcal-2-–-mathcal-Autecology" class="headerlink" title="$\mathcal{Lecture}$ $\mathcal{2}$ – $\mathcal{Autecology}$"></a>$\mathcal{Lecture}$ $\mathcal{2}$ – $\mathcal{Autecology}$</h1><h2 id="什么是个体生态学？"><a href="#什么是个体生态学？" class="headerlink" title="什么是个体生态学？"></a>什么是个体生态学？</h2><ul>
+<li>个体（Individual）：在环境中<font color=pink><strong>生存和繁殖</strong></font>的生物体的基本单位。</li>
+<li>适应度（Fitness）：生命体会很好地适应环境来达到高的存活率</li>
+<li>个体生态学（Autecology）：是生态学的一个分支，它处理单个生物体或单个物种与其环境之间的生物关系。个体生态学关注<font color=pink><strong>个体生物体如何与其他生物和非生物环境相互作用</strong></font>。</li>
+</ul>
+<h2 id="从生态适应的角度看待地球的生物"><a href="#从生态适应的角度看待地球的生物" class="headerlink" title="从生态适应的角度看待地球的生物"></a>从生态适应的角度看待地球的生物</h2><h3 id="能量利用角度"><a href="#能量利用角度" class="headerlink" title="能量利用角度"></a>能量利用角度</h3><ul>
+<li>自养生物 -&gt; Producers（Autotrophs）：大多数植物、藻类，利用光合作用（photosynthesis）和化能合成作用（chemosynthesis）获得能量</li>
+<li>异养生物 -&gt; Consumers（Heterotrophs）：真菌、细菌、食草动物、食肉动物</li>
+<li>兼性营养型 -&gt; Mixed Nutrition（Mixotrophs）：某些藻类</li>
+</ul>
+<h3 id="生态适应角度"><a href="#生态适应角度" class="headerlink" title="生态适应角度"></a>生态适应角度</h3><ul>
+<li><strong>单体生物（Unitary organism）</strong>：单体生物均由受精卵发育而来（只有一个控制中心），形态较为精炼，且比较稳定（可以逃离不利环境）。</li>
+<li><strong>构件生物（Modular organism）</strong>：构件生物是指由一个合子发育的形成一套构件组成的个体（有多个控制中心）。环境发生变化。构件生物会通过调控构建来达到高的适应度</li>
+</ul>
+<h3 id="生殖策略角度"><a href="#生殖策略角度" class="headerlink" title="生殖策略角度"></a>生殖策略角度</h3><ul>
+<li><strong>r-selection</strong>：<font color=pink>个体小、寿命短、存活率低，但增殖率（r）高，具有较强的扩散能力，适应于多变的栖息环境。</font></li>
+<li><strong>K-selection</strong>：<font color=pink>个体大,寿命长,存活率高,适应于稳定的栖息环境,扩散能力弱,仅具有较强的竞争能力,种群密度较稳定。</font></li>
+</ul>
+<h2 id="生物体受到环境的影响"><a href="#生物体受到环境的影响" class="headerlink" title="生物体受到环境的影响"></a>生物体受到环境的影响</h2><ul>
+<li>⽣态因⼦作⽤的特点：<ul>
+<li>综合性</li>
+<li>时段性</li>
+<li>⾮等价性</li>
+<li>直接性和间接性</li>
+<li>不可替代可弥补性</li>
+</ul>
+</li>
+</ul>
+<h3 id="生态因子作用规律（Very-Important）"><a href="#生态因子作用规律（Very-Important）" class="headerlink" title="生态因子作用规律（Very Important）"></a><font color=pink>生态因子作用规律</font>（Very Important）</h3><h4 id="李比希最小因子定律（Liebig’s-law-of-minimum）"><a href="#李比希最小因子定律（Liebig’s-law-of-minimum）" class="headerlink" title="李比希最小因子定律（Liebig’s law of minimum）"></a>李比希最小因子定律（Liebig’s law of minimum）</h4><ul>
+<li>定义：<strong>生物的生存与发展都取决于那些处于最小量状态的因子，即<font color=pink>取决于最小因子</font>；即低于某种生物需要的最小量的生态因子，是决定该生物生存和分布的根本因素</strong></li>
+</ul>
+<h4 id="限制因子（limiting-factor）"><a href="#限制因子（limiting-factor）" class="headerlink" title="限制因子（limiting factor）"></a>限制因子（limiting factor）</h4><ul>
+<li><p>定义：<strong>任何生态因子当接近或超过某种生物耐受性极限 而阻止其生存时，该因子称为限制因子</strong></p>
+</li>
+<li><p>补充使用条件&#x2F;应用范围：</p>
+<ol>
+<li>系统处于稳定状态（Stable system）</li>
+<li>考虑因子间的弥补效应（Compensation between factors）</li>
+</ol>
+</li>
+</ul>
+<h4 id="谢尔福德耐受性定律（Shelford’s-law-of-tolerance）"><a href="#谢尔福德耐受性定律（Shelford’s-law-of-tolerance）" class="headerlink" title="谢尔福德耐受性定律（Shelford’s law of tolerance）"></a>谢尔福德耐受性定律（Shelford’s law of tolerance）</h4><ul>
+<li><p>定义：<strong>每一种生物对生态因子都有一个</strong><font color=pink><strong>耐受性范围</strong></font>，任何一个生态因子在数量或质量上的不足或过多，当接近或达到耐受限度时都会使该生物无法生存或衰退**</p>
+</li>
+<li><p>生态幅（Ecological amplitude）&#x2F;生态价（Ecological value）：对环境因子的<strong>耐受性范围</strong></p>
+</li>
+<li><p>补充：</p>
+<ol>
+<li>同一生物在不同的生长发育阶段对生态因子的耐性范围不同</li>
+<li>不同种生物对同一生态因子的耐性范围不同</li>
+<li>同一生物种内的不同品种，长期生活在不同的生态环境条件下，对多个生态因子会形成有差异的耐性范围，即产生生态型的分化</li>
+<li>由于生态因子的相互作用，当某个生态因子不是处在适宜状态时，则生物对其它一些生态因子的耐性范围将会缩小</li>
+</ol>
+</li>
+</ul>
+<h3 id="环境因子-–-Example"><a href="#环境因子-–-Example" class="headerlink" title="环境因子 – Example"></a>环境因子 – Example</h3><h4 id="光（Light）"><a href="#光（Light）" class="headerlink" title="光（Light）"></a>光（Light）</h4><ul>
+<li>光强：影响光合作用、发育、生长,影响动物的行为<ul>
+<li>阳性植物（cheliophytes）</li>
+<li>阴性植物（sciophytes）</li>
+<li>耐阴植物（shade plant）</li>
+<li>昼出性动物</li>
+<li>夜出性动物 (晨昏性动物)</li>
+<li>全昼夜动物</li>
+</ul>
+</li>
+<li>光谱（light spectrum）<ul>
+<li>光合作用</li>
+<li>物质形成</li>
+<li>植物生长</li>
+<li>动物视觉</li>
+</ul>
+</li>
+<li>光周期（Photoperiod）<ul>
+<li>昼夜节律（circadian rhythm）</li>
+<li>光周期：一年中自然界日照长短(Light:Dark)规律变化</li>
+<li>光周期现象（photoperiodism）：植物的开花结实受自然界日照长短(L:D)规律变化的影响，这种现象称为光周期现象。<ul>
+<li>长日照植&#x2F;动物（主要受夜长影响，临界夜长）</li>
+<li>短日照植&#x2F;动物</li>
+<li>中日性植物</li>
+<li>中间型植&#x2F;动物</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="温度（Temperature）"><a href="#温度（Temperature）" class="headerlink" title="温度（Temperature）"></a>温度（Temperature）</h4><h5 id="温度与生长："><a href="#温度与生长：" class="headerlink" title="温度与生长："></a>温度与生长：</h5><ul>
+<li>三基点温度：最低温度、最适温度与最高温度</li>
+<li>五温区：致死低温区、亚致死低温区、适宜温区（有效温区）、亚致死高温区、致死高温区</li>
+</ul>
+<h5 id="温度与发育-有效积温法则（曾考题）"><a href="#温度与发育-有效积温法则（曾考题）" class="headerlink" title="温度与发育: 有效积温法则（曾考题）"></a>温度与发育: <font color=pink><strong>有效积温法则</strong></font>（曾考题）</h5><ul>
+<li>$$K&#x3D;N(T-T_0)$$</li>
+<li>其中K是有效积温（在特定发育时期是恒定的），N为生育期的天数（被$T$与$T_0$决定，可以计算）；$T_0$为生物学零度；T为环境的平均温度。</li>
+</ul>
+<h5 id="对温度的适应"><a href="#对温度的适应" class="headerlink" title="对温度的适应"></a>对温度的适应</h5><ul>
+<li>高温适应<ul>
+<li>植物在高温胁迫下的一系列生理反应，如叶片、气孔的变化</li>
+</ul>
+</li>
+<li>低温适应<ul>
+<li><strong>贝格曼定律</strong>：分布在温度低的地区，个体大，利于保温，分布在温度高的地区，个体小，有利于散热（北极熊体型大，沙漠动物体型小）</li>
+<li><strong>阿伦定律</strong>：内温动物身体凸出部分随温度降低变小 (北极狐 -&gt; 赤狐 -&gt; 大耳狐，分布从北到南，耳朵逐渐变大)</li>
+</ul>
+</li>
+<li>中温区（thermal neutral zone）：指恒温动物代谢速率保持恒定时的温度范围。<ul>
+<li>不同地区的中温区差异较大</li>
+</ul>
+</li>
+</ul>
+<h4 id="水（Water）"><a href="#水（Water）" class="headerlink" title="水（Water）"></a>水（Water）</h4><ul>
+<li>海洋和淡水生物利用补偿机制来调节体内水分和盐</li>
+<li>植物对干旱和洪涝的适应<ul>
+<li>干旱时：根系生物量增大，地上部分变小（骆驼刺），叶片卷曲</li>
+<li>洪涝时：气生根</li>
+</ul>
+</li>
+</ul>
+<h4 id="土壤（Soil）"><a href="#土壤（Soil）" class="headerlink" title="土壤（Soil）"></a>土壤（Soil）</h4><ul>
+<li>？？？</li>
+</ul>
+<h4 id="污染物（Pollutants）"><a href="#污染物（Pollutants）" class="headerlink" title="污染物（Pollutants）"></a>污染物（Pollutants）</h4><p>eg:集约化农作物区域鸟类取食受DDT影响的害虫，分泌钙质的腺体受破坏，蛋壳越来越薄易碎，种群数量衰退</p>
+<ul>
+<li>适应代价（Adaption Cost）：包括<ul>
+<li>生理代价：阻止污染物的吸收同时也抑制营养的吸收</li>
+<li>生态代价：原来生态系统用于抵抗干旱的能量用于分解污染物了，生态系统的抗旱能力减弱</li>
+<li>进化&#x2F;演化代价：优越基因的丢失</li>
+</ul>
+</li>
+<li>对污染物的适应性反应</li>
+</ul>
+<h3 id="生物体对环境的反应"><a href="#生物体对环境的反应" class="headerlink" title="生物体对环境的反应"></a>生物体对环境的反应</h3><ul>
+<li><strong>大地女神假说</strong>（Gaia）<ul>
+<li><strong>地球表面的温度和化学组成是受地球表面的生命总体(生物圈)所主动控制的</strong></li>
+<li>当地球⼤⽓的化学成分,温度和氧化状态受天⽂的,物理的或其他的⼲扰⽽发⽣变化,产⽣偏离后,⽣物将通过改变其⽣⻓代谢,如光合作⽤吸收释放,呼吸作⽤吸收释放,排泄废⽓物和分解等过程,对偏离作出反应,缓和地球表⾯的这些变化.</li>
+</ul>
+</li>
+</ul>
+<h2 id="适应与演化（概念曾考）"><a href="#适应与演化（概念曾考）" class="headerlink" title="适应与演化（概念曾考）"></a>适应与演化（<font color="#c00000">概念曾考</font>）</h2><ul>
+<li><strong>适应（Adaptation）</strong>：生物体性状的变化使其适应环境。<ul>
+<li>既包括可塑性变化，也包括遗传性变化</li>
+</ul>
+</li>
+<li><strong>演化（Evolution）</strong>：一个种群随着时间的推移发生的遗传组成的变化。<ul>
+<li>依赖于遗传变异</li>
+<li>可以通过随机过程和选择作用发生</li>
+<li>微观进化-种群水平；宏观进化-物种水平和更高层次。</li>
+</ul>
+</li>
+<li><strong>适合度（Fitness）</strong>：生物体能很好地适应环境，从而达到较高的<strong>存活率和繁殖率</strong>。</li>
+</ul>
+<h3 id="适应"><a href="#适应" class="headerlink" title="适应"></a>适应</h3><ul>
+<li><p><strong>适应组合（Adaptive suits）</strong>：生物对环境的适应通常并不限于单一的机制，往往要涉及到一组（或一整套）彼此相互关联的适应性，对一组特定环境条件的适应表现出彼此相联性，这一整套的适应特性称为适应组合。</p>
+</li>
+<li><p><strong>趋同适应（Convergent adaptation）</strong>：两个或两个以上具有不相关祖先的物种，因为在相似的环境条件下，经历了相似的选择力量，进化出相似的性状特征。</p>
+<ul>
+<li>结果形成<strong>生活型（Life form）</strong></li>
+</ul>
+</li>
+<li><p><strong>趋异适应（Divergent adaptation）</strong>：同一物种的不同种群，因为它们在不同环境条件下，经历了不同选择力量，进化出不同的性状特征。</p>
+<ul>
+<li>结果形成<strong>生态型（Eco-type）</strong></li>
+<li>最终可能导致适应辐射</li>
+</ul>
+</li>
+<li><p><strong>适应辐射（Adaptive radiation）</strong>：趋异适应的结果使亲缘相同或相近或起源于共同祖先的生物，适应多种不同的环境而分化成多个在形态、生理和行为上各不相同的种,形成一个同源的辐射状的进化系统，这种适应方式适应辐射。</p>
+</li>
+</ul>
+<h3 id="物种形成"><a href="#物种形成" class="headerlink" title="物种形成"></a>物种形成</h3><ul>
+<li><p><strong>异域物种形成（Allopatric speciation）</strong>：通过大范围的地理分割，分开的两个种群各自演化，最终形成生殖隔离机制，导致物种的形成。</p>
+</li>
+<li><p><strong>同域物种形成（Sympatric speciation）</strong>：没有地理隔离的新物种的形成，一种常见方式是通过多倍体形成新的物种（遗传的多态性）。</p>
+</li>
+<li><p><strong>邻域物种形成（Parapatric speciation）</strong>：出现在地理分布区相邻的两个种群间的物种形成。在一个分布区很广的物种，由于边缘栖息地环境上的区别，使种群内的次群分化、独立，虽然没有出现地理隔离屏障，也能成为基因流动的障碍，在自然选择的作用下，逐渐形成生殖隔离机制而形成新种。</p>
+</li>
+<li><p><strong>生态位分离成种</strong>：在母种群分布区内部,由于生态位的分离,逐渐建立若干子群,子群间由于逐 步建立的生殖隔离,形成基因库的分离而形成新种。</p>
+</li>
+</ul>
+<h2 id="生物体的生长和生活史"><a href="#生物体的生长和生活史" class="headerlink" title="生物体的生长和生活史"></a>生物体的生长和生活史</h2><h3 id="生物个体的生长模型"><a href="#生物个体的生长模型" class="headerlink" title="生物个体的生长模型"></a>生物个体的生长模型</h3><ul>
+<li>个体生长的一般规律：S型曲线               </li>
+<li><strong>Correlated growth（相关生长）</strong>: 生物个体在生长过程中的各个部分成一定比例地相应生长。</li>
+<li><strong>Allometry（异速生长）</strong>：<ul>
+<li><strong>定义：生物个体在生长过程中的各个部分不成比例地生长</strong></li>
+<li>公式：$$Y&#x3D;Y_0 M^b$$</li>
+<li>其中Y为表征生物体<strong>生理特征</strong>的自变量，如代谢率、寿命等，Y<sub>0</sub>为具有<strong>分类群特征</strong>的正则化常数，M为<strong>有机体的体重</strong>（体积、体长），b为标度幂指数（scaling exponent），也叫<strong>异速生长指数</strong>。基础代谢率是体重M<sub>3&#x2F;4 </sub>or M<sub>2&#x2F;3</sub></li>
+</ul>
+</li>
+</ul>
+<h3 id="生物个体的生活史"><a href="#生物个体的生活史" class="headerlink" title="生物个体的生活史"></a>生物个体的生活史</h3><ul>
+<li><p><strong>生活史（Life history&#x2F;Life cycle）</strong>：生活史是指生物从出生到死亡所经历的全部过程，是生长、发育、繁殖、生存的时间表，不同的发展阶段有规律地、顺序地发生就组成了生物的生活史&#x2F;生命周期。</p>
+</li>
+<li><p>生活史特征</p>
+<ul>
+<li>体型<ul>
+<li>一定程度上，体型与生命周期的长短呈正相关</li>
+</ul>
+</li>
+<li>生长速率</li>
+<li>繁殖</li>
+<li>寿命（Longevity）</li>
+</ul>
+</li>
+<li><p><strong>有限生长（Determinate growth）</strong>：一旦生物个体开始繁殖，就不再继续生长</p>
+</li>
+<li><p><strong>无限生长（Indeterminate growth）</strong>：生物个体在生殖后仍继续生长</p>
+</li>
+<li><p><strong>性成熟年龄</strong>与<strong>性成熟后的存活时间</strong>成正相关，不同类群生物有差异</p>
+</li>
+<li><p>环境影响生活史</p>
+<ul>
+<li>食物缺乏的环境达到相同体重所需要的时间长</li>
+<li>温度提高，燕子产卵提前</li>
+<li>温度提高植物开花提前</li>
+</ul>
+</li>
+<li><p>达尔文恶魔（Darwinian demon）：这是一种在出生后立即繁殖的生物，利用所有资源进行繁殖并永远生存。（理论上不能存在，由于Trade off）</p>
+</li>
+</ul>
+<h2 id="繁殖策略"><a href="#繁殖策略" class="headerlink" title="繁殖策略"></a>繁殖策略</h2><h3 id="生殖方式"><a href="#生殖方式" class="headerlink" title="生殖方式"></a>生殖方式</h3><ul>
+<li><p>有性生殖（Sexual reproduction）：后代从双亲遗传DNA的繁殖机制。</p>
+</li>
+<li><p>无性生殖（Asexual reproduction）：一种使后代从单亲本那里遗传DNA的繁殖机制。</p>
+<ul>
+<li>营养生殖（Vegetative reproduction）：无性生殖的一种形式，个体是由父母的非性组织产生的。</li>
+<li>单性生殖&#x2F;孤雌生殖（Parthenogenesis）：无性生殖的一种形式，不受精就产生胚胎</li>
+</ul>
+</li>
+</ul>
+<h4 id="有性生殖的代价和好处（曾考题）"><a href="#有性生殖的代价和好处（曾考题）" class="headerlink" title="有性生殖的代价和好处（曾考题）"></a>有性生殖的代价和好处<font color="#c00000">（曾考题）</font></h4><h5 id="代价-成本"><a href="#代价-成本" class="headerlink" title="代价&#x2F;成本"></a>代价&#x2F;成本</h5><ul>
+<li>花费更多能量<ol>
+<li>遗传代价：亲本中只有约一半的遗传物质传递给后代？</li>
+<li>发育：需要产生两套生殖系统</li>
+<li>求偶：寻找性伴侣</li>
+</ol>
+</li>
+</ul>
+<h5 id="好处-优点"><a href="#好处-优点" class="headerlink" title="好处&#x2F;优点"></a>好处&#x2F;优点</h5><ul>
+<li>产生较高的遗传多样性，从而使种群更好适应环境变化</li>
+</ul>
+<h4 id="雌雄同体（hermaphrodite）和雌雄异体（sex-separation）的代价和好处？？？"><a href="#雌雄同体（hermaphrodite）和雌雄异体（sex-separation）的代价和好处？？？" class="headerlink" title="雌雄同体（hermaphrodite）和雌雄异体（sex separation）的代价和好处？？？"></a>雌雄同体（hermaphrodite）和雌雄异体（sex separation）的代价和好处？？？</h4><h5 id="代价-成本-1"><a href="#代价-成本-1" class="headerlink" title="代价&#x2F;成本"></a>代价&#x2F;成本</h5><h4 id="自花授粉（自交）和异花授粉（异交-outcrossing）"><a href="#自花授粉（自交）和异花授粉（异交-outcrossing）" class="headerlink" title="自花授粉（自交）和异花授粉（异交 outcrossing）"></a>自花授粉（自交）和异花授粉（异交 outcrossing）</h4><ul>
+<li><strong>异交是第一选择</strong>，当找不到愿意的配偶时，个体必须自交。</li>
+<li><strong>异交比自交花费更多</strong>。因此，当资源缺乏或满足压力时，自交是首选。</li>
+</ul>
+<h3 id="繁殖次数"><a href="#繁殖次数" class="headerlink" title="繁殖次数"></a>繁殖次数</h3><ul>
+<li>单次繁殖（<strong>Semelparity</strong>，一生一次繁殖）：<ul>
+<li>后代数量多</li>
+</ul>
+</li>
+<li>多次繁殖（Iteroparity，一生多次繁殖）：<ul>
+<li>后代数量少</li>
+<li>多次繁殖的生物，在其一生中其生理功能逐渐恶化。这导致了繁殖力的逐渐下降，以及死亡率的增加，这种现象被称为衰老。</li>
+</ul>
+</li>
+<li>一年生（Annual）</li>
+<li>多年生（Perennial）</li>
+</ul>
+<h3 id="后代性别选择"><a href="#后代性别选择" class="headerlink" title="后代性别选择"></a>后代性别选择</h3><h4 id="性别决定方式"><a href="#性别决定方式" class="headerlink" title="性别决定方式"></a>性别决定方式</h4><ul>
+<li>遗传决定性别<ul>
+<li>哺乳动物：XY&#x2F;XX</li>
+<li>鸟：ZZ&#x2F;ZW</li>
+<li>昆虫：染色体数等方式</li>
+</ul>
+</li>
+<li>环境决定性别<ul>
+<li>温度依赖的性别决定</li>
+<li>当一只占优势地位的雄性死亡或离开时，最大的雌性就会变成雄性</li>
+</ul>
+</li>
+</ul>
+<h4 id="后代性别比例"><a href="#后代性别比例" class="headerlink" title="后代性别比例"></a>后代性别比例</h4><ul>
+<li>生物学研究越来越多地表明，<strong>雌性</strong>会对其后代的性别比例有很大的影响。（雄性后代比较消耗能量）</li>
+<li>两种选择方式<ul>
+<li>精子选择（Sperm selection）</li>
+<li>堕胎&#x2F;流产选择（Abortion selection）</li>
+</ul>
+</li>
+</ul>
+<h3 id="后代在数量和大小之间的权衡"><a href="#后代在数量和大小之间的权衡" class="headerlink" title="后代在数量和大小之间的权衡"></a>后代在数量和大小之间的权衡</h3><ul>
+<li>植物<ul>
+<li>种子数量与种子重量负相关</li>
+<li>种子重量与成芽率正相关</li>
+</ul>
+</li>
+<li>鸟类：<ul>
+<li>卵数量与卵大小大致负相关</li>
+<li>卵大小在一定范围内愈大，小鸟数量越多；超过一定界限可能会下降</li>
+</ul>
+</li>
+</ul>
+<h3 id="婚配制度"><a href="#婚配制度" class="headerlink" title="婚配制度"></a>婚配制度</h3><ul>
+<li><p>单配制（monogamy），相当于一夫一妻；</p>
+</li>
+<li><p>一雄多雌制（polygyny）</p>
+</li>
+<li><p>一雌多雄制（polyandry）</p>
+</li>
+<li><p>多雌多雄制（polygynandry）</p>
+</li>
+<li><p><strong>多配制（polygamy）</strong></p>
+</li>
+<li><p>乱交制（Promiscuity）</p>
+</li>
+<li><p><strong>配偶外交配（extra-copulation）</strong> 的好处</p>
+<ul>
+<li>对于邻近的雄性：更多的繁殖的机会</li>
+<li>对于雌性：后代能够得到更多的存活率，得到更多资源</li>
+<li>对于后代：更优秀的基因-&gt;如，更强的免疫力</li>
+</ul>
+</li>
+</ul>
+<h3 id="性选择"><a href="#性选择" class="headerlink" title="性选择"></a>性选择</h3><ul>
+<li><p>性选择（Sexual selection）：对与生殖相关的性别特异性特征的自然选择被称为性选择。</p>
+</li>
+<li><p>性别二态性（Sexual dimorphism）：在同一物种的雄性和雌性之间的表型差异</p>
+</li>
+<li><p>第一性征（Primary sexual characteristics）：与受精相关性状</p>
+</li>
+<li><p>第二性征（Secondary sexual characteristics）：在体型、装饰、颜色和求偶关系等方面，与性别差异相关的特征</p>
+</li>
+<li><p>亲代投资理论（Parental investment theory）：投资少一方的成为追逐者，而投资多的一方成为被追逐者。</p>
+<ul>
+<li>解释为什么雌性有选择权&#x2F;是追逐者</li>
+</ul>
+</li>
+<li><p>健康假说（Good health hypothesis）：性选择倾向选出最健康的个体</p>
+</li>
+<li><p>性选择失控（Runaway）：当对一个性特征偏好的选择和对该性特征的选择继续相互加强时，可能会发生性选择的失控</p>
+</li>
+</ul>
+<h3 id="r-选择与K-选择"><a href="#r-选择与K-选择" class="headerlink" title="r-选择与K-选择"></a>r-选择与K-选择</h3><ul>
+<li><p><strong>r-selection</strong>：个体小、寿命短、存活率低，但增殖率（r）高，具有较强的扩散能力，适应于<strong>多变的栖息环境</strong>。</p>
+</li>
+<li><p><strong>K-selection</strong>：个体大、寿命长、存活率高，增殖率（r）低，扩散能力弱,适应于<strong>稳定的栖息环境</strong>,仅具有较强的竞争能力,种群密度较稳定。</p>
+</li>
+</ul>
+<h2 id="个体行为"><a href="#个体行为" class="headerlink" title="个体行为"></a>个体行为</h2><ul>
+<li>行为（Behaviour）：是生物体进行的<strong>从外部可观察</strong>到的活动。包括身体的运动（如奔跑、攻击）、静止姿势的变化（如守卫的姿势）、体色的改变、声音的发出以及气味的释放等。</li>
+</ul>
+<h3 id="个体行为-1"><a href="#个体行为-1" class="headerlink" title="个体行为"></a>个体行为</h3><ul>
+<li><p>本能行为（Instinctive behaviour）：通过遗传获得的、与生俱来的行为，如：各类趋性（趋光性、趋湿性…）等</p>
+</li>
+<li><p>学习行为（Learned behaviour）：⽣物体的学习⾏为简单说就是<strong>⽤经验调整⾏动</strong>,以更好地<strong>适应环境</strong>的⼀系列⾏为.</p>
+<ul>
+<li>经验的获取过程即是学习过程</li>
+<li>学习的⽅式有：习惯化,印随学习,联系学习,洞察学习.</li>
+</ul>
+</li>
+<li><p>功能行为（Functional behavior）：迁徙、攻击防御、取⻝、通讯、繁殖</p>
+</li>
+</ul>
+<h3 id="社会行为（略重点，比起个体行为）"><a href="#社会行为（略重点，比起个体行为）" class="headerlink" title="社会行为（略重点，比起个体行为）"></a>社会行为（略重点，比起个体行为）</h3><ul>
+<li>社会行为（Social behaviors）：与本物种成员的互动，包括配偶、后代、其他亲属、不相关的个体。</li>
+</ul>
+<h4 id="社会行为的代价和好处"><a href="#社会行为的代价和好处" class="headerlink" title="社会行为的代价和好处"></a>社会行为的代价和好处</h4><ul>
+<li><p>社会行为的代价</p>
+<ul>
+<li>存在竞争<ul>
+<li>觅食更困难，时间更长</li>
+<li>植物中“公共资源的悲哀”：植物邻体之间根系对养分的竞争吸收，超过自己所需的量</li>
+</ul>
+</li>
+<li>病原物在群体中的传播</li>
+</ul>
+</li>
+<li><p>社会行为的好处</p>
+<ul>
+<li>利于防御和生存</li>
+<li>易于寻找配偶</li>
+</ul>
+</li>
+<li><p>利他行为（altrusim）：增加了接受者的适合度，但降低了捐赠者的适合度。</p>
+</li>
+<li><p>亲缘选择（Kin selection）理论（汉密尔顿法则）：亲缘关系越近，动物彼此合作倾向和利他行为也就越强烈；亲缘越远，则表现越弱。</p>
+<ul>
+<li>解释利他行为</li>
+</ul>
+</li>
+</ul>
+<h3 id="群居种（Eusocial）"><a href="#群居种（Eusocial）" class="headerlink" title="群居种（Eusocial）"></a>群居种（Eusocial）</h3><ul>
+<li>群居种的特征：<ul>
+<li>⼏个成体⽣活在⼀起</li>
+<li>亲代与⼦代重叠，居住在⼀起</li>
+<li>在筑巢和孵化、育儿方面的合作</li>
+<li>由一个或几个个体产生的生殖优势，以及不育个体的存在</li>
+</ul>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://parzival886.github.io">Jiale Zheng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://parzival886.github.io/2024/09/21/Ecology/">http://parzival886.github.io/2024/09/21/Ecology/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://parzival886.github.io" target="_blank">Jiale Zheng's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/course/">course</a><a class="post-meta__tags" href="/tags/note/">note</a><a class="post-meta__tags" href="/tags/Ecology/">Ecology</a></div><div class="post-share"><div class="social-share" data-image="/img/1.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="prev-post pull-left" href="/2024/09/21/Bioinfomatics-Tools/" title="Bioinfomatics_Tools"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Bioinfomatics_Tools</div></div></a><a class="next-post pull-right" href="/2024/09/21/Biochemistry/" title="Biochemistry"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Biochemistry</div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a href="/2024/09/21/Biochemistry/" title="Biochemistry"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-09-21</div><div class="title">Biochemistry</div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info is-center"><div class="avatar-img"><img src="/img/1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Jiale Zheng</div><div class="author-info-description">Learning Bioinformatics now......</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#mathcal-Lecture-mathcal-2-%E2%80%93-mathcal-Autecology"><span class="toc-number">1.</span> <span class="toc-text">$\mathcal{Lecture}$ $\mathcal{2}$ – $\mathcal{Autecology}$</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%AA%E4%BD%93%E7%94%9F%E6%80%81%E5%AD%A6%EF%BC%9F"><span class="toc-number">1.1.</span> <span class="toc-text">什么是个体生态学？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8E%E7%94%9F%E6%80%81%E9%80%82%E5%BA%94%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%BE%85%E5%9C%B0%E7%90%83%E7%9A%84%E7%94%9F%E7%89%A9"><span class="toc-number">1.2.</span> <span class="toc-text">从生态适应的角度看待地球的生物</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%BD%E9%87%8F%E5%88%A9%E7%94%A8%E8%A7%92%E5%BA%A6"><span class="toc-number">1.2.1.</span> <span class="toc-text">能量利用角度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E6%80%81%E9%80%82%E5%BA%94%E8%A7%92%E5%BA%A6"><span class="toc-number">1.2.2.</span> <span class="toc-text">生态适应角度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E6%AE%96%E7%AD%96%E7%95%A5%E8%A7%92%E5%BA%A6"><span class="toc-number">1.2.3.</span> <span class="toc-text">生殖策略角度</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E7%89%A9%E4%BD%93%E5%8F%97%E5%88%B0%E7%8E%AF%E5%A2%83%E7%9A%84%E5%BD%B1%E5%93%8D"><span class="toc-number">1.3.</span> <span class="toc-text">生物体受到环境的影响</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E6%80%81%E5%9B%A0%E5%AD%90%E4%BD%9C%E7%94%A8%E8%A7%84%E5%BE%8B%EF%BC%88Very-Important%EF%BC%89"><span class="toc-number">1.3.1.</span> <span class="toc-text">生态因子作用规律（Very Important）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9D%8E%E6%AF%94%E5%B8%8C%E6%9C%80%E5%B0%8F%E5%9B%A0%E5%AD%90%E5%AE%9A%E5%BE%8B%EF%BC%88Liebig%E2%80%99s-law-of-minimum%EF%BC%89"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">李比希最小因子定律（Liebig’s law of minimum）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%99%90%E5%88%B6%E5%9B%A0%E5%AD%90%EF%BC%88limiting-factor%EF%BC%89"><span class="toc-number">1.3.1.2.</span> <span class="toc-text">限制因子（limiting factor）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B0%A2%E5%B0%94%E7%A6%8F%E5%BE%B7%E8%80%90%E5%8F%97%E6%80%A7%E5%AE%9A%E5%BE%8B%EF%BC%88Shelford%E2%80%99s-law-of-tolerance%EF%BC%89"><span class="toc-number">1.3.1.3.</span> <span class="toc-text">谢尔福德耐受性定律（Shelford’s law of tolerance）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%9B%A0%E5%AD%90-%E2%80%93-Example"><span class="toc-number">1.3.2.</span> <span class="toc-text">环境因子 – Example</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%89%EF%BC%88Light%EF%BC%89"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">光（Light）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B8%A9%E5%BA%A6%EF%BC%88Temperature%EF%BC%89"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">温度（Temperature）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B8%A9%E5%BA%A6%E4%B8%8E%E7%94%9F%E9%95%BF%EF%BC%9A"><span class="toc-number">1.3.2.2.1.</span> <span class="toc-text">温度与生长：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B8%A9%E5%BA%A6%E4%B8%8E%E5%8F%91%E8%82%B2-%E6%9C%89%E6%95%88%E7%A7%AF%E6%B8%A9%E6%B3%95%E5%88%99%EF%BC%88%E6%9B%BE%E8%80%83%E9%A2%98%EF%BC%89"><span class="toc-number">1.3.2.2.2.</span> <span class="toc-text">温度与发育: 有效积温法则（曾考题）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AF%B9%E6%B8%A9%E5%BA%A6%E7%9A%84%E9%80%82%E5%BA%94"><span class="toc-number">1.3.2.2.3.</span> <span class="toc-text">对温度的适应</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B0%B4%EF%BC%88Water%EF%BC%89"><span class="toc-number">1.3.2.3.</span> <span class="toc-text">水（Water）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%9F%E5%A3%A4%EF%BC%88Soil%EF%BC%89"><span class="toc-number">1.3.2.4.</span> <span class="toc-text">土壤（Soil）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B1%A1%E6%9F%93%E7%89%A9%EF%BC%88Pollutants%EF%BC%89"><span class="toc-number">1.3.2.5.</span> <span class="toc-text">污染物（Pollutants）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E7%89%A9%E4%BD%93%E5%AF%B9%E7%8E%AF%E5%A2%83%E7%9A%84%E5%8F%8D%E5%BA%94"><span class="toc-number">1.3.3.</span> <span class="toc-text">生物体对环境的反应</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%82%E5%BA%94%E4%B8%8E%E6%BC%94%E5%8C%96%EF%BC%88%E6%A6%82%E5%BF%B5%E6%9B%BE%E8%80%83%EF%BC%89"><span class="toc-number">1.4.</span> <span class="toc-text">适应与演化（概念曾考）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%82%E5%BA%94"><span class="toc-number">1.4.1.</span> <span class="toc-text">适应</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%A9%E7%A7%8D%E5%BD%A2%E6%88%90"><span class="toc-number">1.4.2.</span> <span class="toc-text">物种形成</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E7%89%A9%E4%BD%93%E7%9A%84%E7%94%9F%E9%95%BF%E5%92%8C%E7%94%9F%E6%B4%BB%E5%8F%B2"><span class="toc-number">1.5.</span> <span class="toc-text">生物体的生长和生活史</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E7%89%A9%E4%B8%AA%E4%BD%93%E7%9A%84%E7%94%9F%E9%95%BF%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.5.1.</span> <span class="toc-text">生物个体的生长模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E7%89%A9%E4%B8%AA%E4%BD%93%E7%9A%84%E7%94%9F%E6%B4%BB%E5%8F%B2"><span class="toc-number">1.5.2.</span> <span class="toc-text">生物个体的生活史</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B9%81%E6%AE%96%E7%AD%96%E7%95%A5"><span class="toc-number">1.6.</span> <span class="toc-text">繁殖策略</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E6%AE%96%E6%96%B9%E5%BC%8F"><span class="toc-number">1.6.1.</span> <span class="toc-text">生殖方式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%89%E6%80%A7%E7%94%9F%E6%AE%96%E7%9A%84%E4%BB%A3%E4%BB%B7%E5%92%8C%E5%A5%BD%E5%A4%84%EF%BC%88%E6%9B%BE%E8%80%83%E9%A2%98%EF%BC%89"><span class="toc-number">1.6.1.1.</span> <span class="toc-text">有性生殖的代价和好处（曾考题）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%A3%E4%BB%B7-%E6%88%90%E6%9C%AC"><span class="toc-number">1.6.1.1.1.</span> <span class="toc-text">代价&#x2F;成本</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A5%BD%E5%A4%84-%E4%BC%98%E7%82%B9"><span class="toc-number">1.6.1.1.2.</span> <span class="toc-text">好处&#x2F;优点</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9B%8C%E9%9B%84%E5%90%8C%E4%BD%93%EF%BC%88hermaphrodite%EF%BC%89%E5%92%8C%E9%9B%8C%E9%9B%84%E5%BC%82%E4%BD%93%EF%BC%88sex-separation%EF%BC%89%E7%9A%84%E4%BB%A3%E4%BB%B7%E5%92%8C%E5%A5%BD%E5%A4%84%EF%BC%9F%EF%BC%9F%EF%BC%9F"><span class="toc-number">1.6.1.2.</span> <span class="toc-text">雌雄同体（hermaphrodite）和雌雄异体（sex separation）的代价和好处？？？</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%A3%E4%BB%B7-%E6%88%90%E6%9C%AC-1"><span class="toc-number">1.6.1.2.1.</span> <span class="toc-text">代价&#x2F;成本</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E8%8A%B1%E6%8E%88%E7%B2%89%EF%BC%88%E8%87%AA%E4%BA%A4%EF%BC%89%E5%92%8C%E5%BC%82%E8%8A%B1%E6%8E%88%E7%B2%89%EF%BC%88%E5%BC%82%E4%BA%A4-outcrossing%EF%BC%89"><span class="toc-number">1.6.1.3.</span> <span class="toc-text">自花授粉（自交）和异花授粉（异交 outcrossing）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B9%81%E6%AE%96%E6%AC%A1%E6%95%B0"><span class="toc-number">1.6.2.</span> <span class="toc-text">繁殖次数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8E%E4%BB%A3%E6%80%A7%E5%88%AB%E9%80%89%E6%8B%A9"><span class="toc-number">1.6.3.</span> <span class="toc-text">后代性别选择</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%A7%E5%88%AB%E5%86%B3%E5%AE%9A%E6%96%B9%E5%BC%8F"><span class="toc-number">1.6.3.1.</span> <span class="toc-text">性别决定方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%8E%E4%BB%A3%E6%80%A7%E5%88%AB%E6%AF%94%E4%BE%8B"><span class="toc-number">1.6.3.2.</span> <span class="toc-text">后代性别比例</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8E%E4%BB%A3%E5%9C%A8%E6%95%B0%E9%87%8F%E5%92%8C%E5%A4%A7%E5%B0%8F%E4%B9%8B%E9%97%B4%E7%9A%84%E6%9D%83%E8%A1%A1"><span class="toc-number">1.6.4.</span> <span class="toc-text">后代在数量和大小之间的权衡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A9%9A%E9%85%8D%E5%88%B6%E5%BA%A6"><span class="toc-number">1.6.5.</span> <span class="toc-text">婚配制度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%A7%E9%80%89%E6%8B%A9"><span class="toc-number">1.6.6.</span> <span class="toc-text">性选择</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#r-%E9%80%89%E6%8B%A9%E4%B8%8EK-%E9%80%89%E6%8B%A9"><span class="toc-number">1.6.7.</span> <span class="toc-text">r-选择与K-选择</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%AA%E4%BD%93%E8%A1%8C%E4%B8%BA"><span class="toc-number">1.7.</span> <span class="toc-text">个体行为</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AA%E4%BD%93%E8%A1%8C%E4%B8%BA-1"><span class="toc-number">1.7.1.</span> <span class="toc-text">个体行为</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A4%BE%E4%BC%9A%E8%A1%8C%E4%B8%BA%EF%BC%88%E7%95%A5%E9%87%8D%E7%82%B9%EF%BC%8C%E6%AF%94%E8%B5%B7%E4%B8%AA%E4%BD%93%E8%A1%8C%E4%B8%BA%EF%BC%89"><span class="toc-number">1.7.2.</span> <span class="toc-text">社会行为（略重点，比起个体行为）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A4%BE%E4%BC%9A%E8%A1%8C%E4%B8%BA%E7%9A%84%E4%BB%A3%E4%BB%B7%E5%92%8C%E5%A5%BD%E5%A4%84"><span class="toc-number">1.7.2.1.</span> <span class="toc-text">社会行为的代价和好处</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BE%A4%E5%B1%85%E7%A7%8D%EF%BC%88Eusocial%EF%BC%89"><span class="toc-number">1.7.3.</span> <span class="toc-text">群居种（Eusocial）</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/21/Bioinfomatics-Tools/" title="Bioinfomatics_Tools">Bioinfomatics_Tools</a><time datetime="2024-09-21T14:28:05.000Z" title="发表于 2024-09-21 22:28:05">2024-09-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/21/Ecology/" title="Ecology">Ecology</a><time datetime="2024-09-21T14:27:20.000Z" title="发表于 2024-09-21 22:27:20">2024-09-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/21/Biochemistry/" title="Biochemistry">Biochemistry</a><time datetime="2024-09-21T08:44:22.000Z" title="发表于 2024-09-21 16:44:22">2024-09-21</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2024 By Jiale Zheng</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+      
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
