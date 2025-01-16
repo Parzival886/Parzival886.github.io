@@ -1,0 +1,321 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Machine Learning | Parzival's Blog</title><meta name="author" content="Jerry Zheng"><meta name="copyright" content="Jerry Zheng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Machine Learning">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Machine Learning">
+<meta property="og:url" content="http://parzival886.github.io/2025/01/16/Machine-Learning/index.html">
+<meta property="og:site_name" content="Parzival&#39;s Blog">
+<meta property="og:description" content="Machine Learning">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://parzival886.github.io/img/cover6.png">
+<meta property="article:published_time" content="2025-01-16T15:41:37.000Z">
+<meta property="article:modified_time" content="2025-01-16T15:47:56.035Z">
+<meta property="article:author" content="Jerry Zheng">
+<meta property="article:tag" content="note">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://parzival886.github.io/img/cover6.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://parzival886.github.io/2025/01/16/Machine-Learning/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>(()=>{
+      const saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+      
+      window.btf = {
+        saveToLocal: saveToLocal,
+        getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+          script.src = url
+          script.async = true
+          script.onerror = reject
+          script.onload = script.onreadystatechange = function() {
+            const loadState = this.readyState
+            if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+            script.onload = script.onreadystatechange = null
+            resolve()
+          }
+
+          Object.keys(attr).forEach(key => {
+            script.setAttribute(key, attr[key])
+          })
+
+          document.head.appendChild(script)
+        }),
+
+        getCSS: (url, id = false) => new Promise((resolve, reject) => {
+          const link = document.createElement('link')
+          link.rel = 'stylesheet'
+          link.href = url
+          if (id) link.id = id
+          link.onerror = reject
+          link.onload = link.onreadystatechange = function() {
+            const loadState = this.readyState
+            if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+            link.onload = link.onreadystatechange = null
+            resolve()
+          }
+          document.head.appendChild(link)
+        }),
+
+        addGlobalFn: (key, fn, name = false, parent = window) => {
+          const pjaxEnable = false
+          if (!pjaxEnable && key.startsWith('pjax')) return
+
+          const globalFn = parent.globalFn || {}
+          const keyObj = globalFn[key] || {}
+    
+          if (name && keyObj[name]) return
+    
+          name = name || Object.keys(keyObj).length
+          keyObj[name] = fn
+          globalFn[key] = keyObj
+          parent.globalFn = globalFn
+        }
+      }
+    
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+      
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })()</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":true,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Machine Learning',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-01-16 23:47:56'
+}</script><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (false) {
+    btf.addGlobalFn('pjaxSend', () => { preloader.initLoading() }, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', () => { preloader.endLoading() }, 'preloader_end')
+  }
+})()</script><div id="web_bg" style="background-image: url(/img/15.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/1.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/cover6.png);"><nav id="nav"><span id="blog-info"><a href="/" title="Parzival's Blog"><span class="site-name">Parzival's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Machine Learning</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-01-16T15:41:37.000Z" title="发表于 2025-01-16 23:41:37">2025-01-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-01-16T15:47:56.035Z" title="更新于 2025-01-16 23:47:56">2025-01-16</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>9分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Machine Learning"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Single-Variable-Linear-Regression"><a href="#Single-Variable-Linear-Regression" class="headerlink" title="Single Variable Linear Regression"></a>Single Variable Linear Regression</h1><h2 id="Model"><a href="#Model" class="headerlink" title="Model"></a>Model</h2><script type="math/tex; mode=display">
+f_{w,b}(x) = wx + b</script><h2 id="Cost-Function"><a href="#Cost-Function" class="headerlink" title="Cost Function"></a>Cost Function</h2><script type="math/tex; mode=display">
+J(w,b) = \frac{1}{2m}\sum_{i=1}^{m}(f_{w,b}(x_i)-y_i)^2</script><p>$(x_i,y_i)$ are the true  values in the dataset which has m samples.</p>
+<h2 id="Gradient-Descent"><a href="#Gradient-Descent" class="headerlink" title="Gradient Descent"></a>Gradient Descent</h2><script type="math/tex; mode=display">
+\begin{cases}
+w = w - \alpha \frac{\partial}{\partial w}J(w,b) \\ \\
+b = b - \alpha \frac{\partial}{\partial b}J(w,b)
+\end{cases}</script><p>And we can calculate the partial derivatives with following equations:</p>
+<script type="math/tex; mode=display">
+\frac{\partial}{\partial w}J(w,b) = \frac{1}{m}\sum_{i=1}^{m}(f_{w,b}(x_i)-y_i) \cdot x_i \\
+\frac{\partial}{\partial b}J(w,b) = \frac{1}{m}\sum_{i=1}^{m}(f_{w,b}(x_i)-y_i)</script><h2 id="Code-in-Python"><a href="#Code-in-Python" class="headerlink" title="Code in Python"></a>Code in Python</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">compute_cost</span>(<span class="params">x, y, w, b</span>): </span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Computes the cost function for linear regression.</span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">      x (nd_array): Data, m examples </span></span><br><span class="line"><span class="string">      y (nd_array): target values</span></span><br><span class="line"><span class="string">      w,b (scalar): model parameters  </span></span><br><span class="line"><span class="string">    Returns</span></span><br><span class="line"><span class="string">        total_cost (float): The cost of using w,b as the parameters for linear regression</span></span><br><span class="line"><span class="string">               to fit the data points in x and y</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># number of training examples</span></span><br><span class="line">    m = x.shape[<span class="number">0</span>] <span class="comment">#using numpy</span></span><br><span class="line">    </span><br><span class="line">    cost_sum = <span class="number">0</span> </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(m): </span><br><span class="line">        f_wb = w * x[i] + b   </span><br><span class="line">        cost = (f_wb - y[i]) ** <span class="number">2</span>  </span><br><span class="line">        cost_sum = cost_sum + cost  </span><br><span class="line">    total_cost = (<span class="number">1</span> / (<span class="number">2</span> * m)) * cost_sum  </span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> total_cost</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">compute_gradient</span>(<span class="params">x, y, w, b</span>): </span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Computes the gradient for linear regression </span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">      x (nd_array): Data, m examples </span></span><br><span class="line"><span class="string">      y (nd_array): target values</span></span><br><span class="line"><span class="string">      w,b (scalar): model parameters  </span></span><br><span class="line"><span class="string">    Returns</span></span><br><span class="line"><span class="string">      dj_dw (scalar): The gradient of the cost w.r.t. the parameters w</span></span><br><span class="line"><span class="string">      dj_db (scalar): The gradient of the cost w.r.t. the parameter b     </span></span><br><span class="line"><span class="string">     &quot;&quot;&quot;</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Number of training examples</span></span><br><span class="line">    m = x.shape[<span class="number">0</span>]    </span><br><span class="line">    dj_dw = <span class="number">0</span></span><br><span class="line">    dj_db = <span class="number">0</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(m):  </span><br><span class="line">        f_wb = w * x[i] + b </span><br><span class="line">        dj_dw_i = (f_wb - y[i]) * x[i] </span><br><span class="line">        dj_db_i = f_wb - y[i] </span><br><span class="line">        dj_db += dj_db_i</span><br><span class="line">        dj_dw += dj_dw_i </span><br><span class="line">    dj_dw = dj_dw / m </span><br><span class="line">    dj_db = dj_db / m </span><br><span class="line">        </span><br><span class="line">    <span class="keyword">return</span> dj_dw, dj_db</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">gradient_descent</span>(<span class="params">x, y, w_0, b_0, alpha, num_iters</span>): </span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Performs gradient descent to fit w,b. Updates w,b by taking </span></span><br><span class="line"><span class="string">    num_iters gradient steps with learning rate alpha</span></span><br><span class="line"><span class="string">    </span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">      x (nd_array):      Data, m examples </span></span><br><span class="line"><span class="string">      y (nd_array):      target values</span></span><br><span class="line"><span class="string">      w_0,b_0 (scalar):  initial values of model parameters  </span></span><br><span class="line"><span class="string">      alpha (float):     Learning rate</span></span><br><span class="line"><span class="string">      num_iters (int):   number of iterations to run gradient descent</span></span><br><span class="line"><span class="string">      </span></span><br><span class="line"><span class="string">    Returns:</span></span><br><span class="line"><span class="string">      w (scalar): Updated value of parameter after running gradient descent</span></span><br><span class="line"><span class="string">      b (scalar): Updated value of parameter after running gradient descent</span></span><br><span class="line"><span class="string">      J_history (List): History of cost values</span></span><br><span class="line"><span class="string">      p_history (list): History of parameters [w,b] </span></span><br><span class="line"><span class="string">      &quot;&quot;&quot;</span></span><br><span class="line">    </span><br><span class="line">    w = copy.deepcopy(w_0) <span class="comment"># avoid modifying global w_0</span></span><br><span class="line">    <span class="comment"># An array to store cost J and w&#x27;s at each iteration primarily for graphing later</span></span><br><span class="line">    J_history = []</span><br><span class="line">    p_history = []</span><br><span class="line">    b = b_0</span><br><span class="line">    w = w_0</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(num_iters):</span><br><span class="line">        <span class="comment"># Calculate the gradient and update the parameters using gradient_function</span></span><br><span class="line">        dj_dw, dj_db = compute_gradient(x, y, w , b)     </span><br><span class="line"></span><br><span class="line">        <span class="comment"># Update Parameters</span></span><br><span class="line">        b = b - alpha * dj_db                            </span><br><span class="line">        w = w - alpha * dj_dw                            </span><br><span class="line"></span><br><span class="line">        <span class="comment"># Save cost J at each iteration</span></span><br><span class="line">        <span class="keyword">if</span> i &lt; <span class="number">100000</span>:      <span class="comment"># prevent resource exhaustion </span></span><br><span class="line">            J_history.append(compute_cost(x, y, w , b))</span><br><span class="line">            p_history.append([w,b])</span><br><span class="line">            </span><br><span class="line">        <span class="comment"># Print cost every at intervals 10 times or as many iterations if &lt; 10</span></span><br><span class="line">        <span class="keyword">if</span> (i % math.ceil(num_iters/<span class="number">10</span>)) == <span class="number">0</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">f&quot;Iteration <span class="subst">&#123;i:<span class="number">4</span>&#125;</span>: Cost <span class="subst">&#123;J_history[-<span class="number">1</span>]:<span class="number">0.2</span>e&#125;</span> &quot;</span>,</span><br><span class="line">                  <span class="string">f&quot;dj_dw: <span class="subst">&#123;dj_dw: <span class="number">0.3</span>e&#125;</span>, dj_db: <span class="subst">&#123;dj_db: <span class="number">0.3</span>e&#125;</span>  &quot;</span>,</span><br><span class="line">                  <span class="string">f&quot;w: <span class="subst">&#123;w: <span class="number">0.3</span>e&#125;</span>, b:<span class="subst">&#123;b: <span class="number">0.5</span>e&#125;</span>&quot;</span>)</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> w, b, J_history, p_history <span class="comment">#return w,b and J,p history for graphing</span></span><br></pre></td></tr></table></figure>
+<h1 id="Multiple-Variables-Linear-Regression"><a href="#Multiple-Variables-Linear-Regression" class="headerlink" title="Multiple Variables Linear Regression"></a>Multiple Variables Linear Regression</h1><h2 id="Model-1"><a href="#Model-1" class="headerlink" title="Model"></a>Model</h2><p>The model’s prediction with multiple variables is given by the linear model:</p>
+<script type="math/tex; mode=display">
+f_{\mathbf{w},b}(\mathbf{x}) =  w_0x_0 + w_1x_1 +... + w_{n-1}x_{n-1} + b \tag{1}</script><p>or in vector notation:</p>
+<script type="math/tex; mode=display">
+f_{\mathbf{w},b}(\mathbf{x}) = \mathbf{w} \cdot \mathbf{x} + b  \tag{2}</script><p>where $\cdot$ is a vector <code>dot product</code></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = np.array([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])</span><br><span class="line">y = np.array([<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>])</span><br><span class="line">f = np.dot(w,x) + b <span class="comment">#we can use numpy dot to calculate</span></span><br></pre></td></tr></table></figure>
+<p>Examples are stored in a NumPy matrix . Each row of the matrix represents one example. When you have $m$ training examples, and there are $n$ features, $\mathbf{X}$ is a matrix with dimensions ($m$, $n$) (m rows, n columns).</p>
+<script type="math/tex; mode=display">
+\mathbf{X} = 
+\begin{pmatrix}
+ x^{(0)}_0 & x^{(0)}_1 & \cdots & x^{(0)}_{n-1} \\ 
+ x^{(1)}_0 & x^{(1)}_1 & \cdots & x^{(1)}_{n-1} \\
+ \cdots \\
+ x^{(m-1)}_0 & x^{(m-1)}_1 & \cdots & x^{(m-1)}_{n-1} 
+\end{pmatrix}</script><p>notation:</p>
+<ul>
+<li>$\mathbf{x}^{(i)}$ is vector containing example i. $\mathbf{x}^{(i)}$ $ = (x^{(i)}_0, x^{(i)}_1, \cdots,x^{(i)}_{n-1})$</li>
+<li>$x^{(i)}_j$ is element j in example i . The superscript in parenthesis indicates the example number while the subscript represents an element.  </li>
+</ul>
+<ul>
+<li>$\mathbf{w}$ is a vector with $n$ elements.<ul>
+<li>Each element contains the parameter associated with one feature.</li>
+<li>notionally, we draw this as a column vector</li>
+</ul>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+\mathbf{w} = \begin{pmatrix}
+w_0 \\ 
+w_1 \\
+\cdots\\
+w_{n-1}
+\end{pmatrix}</script><ul>
+<li>$b$ is a scalar parameter.  </li>
+</ul>
+<h2 id="Cost-Function-1"><a href="#Cost-Function-1" class="headerlink" title="Cost Function"></a>Cost Function</h2><p>The equation for the cost function with multiple variables $J(\mathbf{w},b)$ is:</p>
+<script type="math/tex; mode=display">
+J(\mathbf{w},b) = \frac{1}{2m} \sum\limits_{i = 0}^{m-1} (f_{\mathbf{w},b}(\mathbf{x}^{(i)}) - y^{(i)})^2 \tag{3}</script><p>where:</p>
+<script type="math/tex; mode=display">
+f_{\mathbf{w},b}(\mathbf{x}^{(i)}) = \mathbf{w} \cdot \mathbf{x}^{(i)} + b  \tag{4}</script><h2 id="Gradient-Descent-1"><a href="#Gradient-Descent-1" class="headerlink" title="Gradient Descent"></a>Gradient Descent</h2><p>Gradient descent for multiple variables:</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+& w_j = w_j -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial w_j} \tag{5}  \; & \text{for j = 0..n-1}\newline
+&b\ \ = b -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial b}
+\end{align*}</script><p>where, n is the number of features, parameters $w_j$,  $b$, are updated simultaneously and where</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\frac{\partial J(\mathbf{w},b)}{\partial w_j}  &= \frac{1}{m} \sum\limits_{i = 0}^{m-1} (f_{\mathbf{w},b}(\mathbf{x}^{(i)}) - y^{(i)})x_{j}^{(i)} \tag{6}  \\
+\frac{\partial J(\mathbf{w},b)}{\partial b}  &= \frac{1}{m} \sum\limits_{i = 0}^{m-1} (f_{\mathbf{w},b}(\mathbf{x}^{(i)}) - y^{(i)}) \tag{7}
+\end{align}</script><ul>
+<li><p>m is the number of training examples in the data set</p>
+</li>
+<li><p>$f_{\mathbf{w},b}(\mathbf{x}^{(i)})$ is the model’s prediction, while $y^{(i)}$ is the target value</p>
+</li>
+</ul>
+<h2 id="Code-in-Python-1"><a href="#Code-in-Python-1" class="headerlink" title="Code in Python"></a>Code in Python</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">compute_cost</span>(<span class="params">X, y, w, b</span>): </span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">      X (matrix (m,n)): Data, m examples with n features</span></span><br><span class="line"><span class="string">      y (nd_array (m,)) : target values</span></span><br><span class="line"><span class="string">      w (nd_array (n,)) : model parameters  </span></span><br><span class="line"><span class="string">      b (scalar)       : model parameter</span></span><br><span class="line"><span class="string">    Returns:</span></span><br><span class="line"><span class="string">      cost (scalar): cost</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    m = X.shape[<span class="number">0</span>]</span><br><span class="line">    cost = <span class="number">0.0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(m):                                </span><br><span class="line">        f_wb_i = np.dot(X[i], w) + b           </span><br><span class="line">        cost = cost + (f_wb_i - y[i])**<span class="number">2</span>       </span><br><span class="line">    cost = cost / (<span class="number">2</span> * m)                      </span><br><span class="line">    <span class="keyword">return</span> cost</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">compute_gradient</span>(<span class="params">X, y, w, b</span>): </span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">      X (matrix (m,n)): Data, m examples with n features</span></span><br><span class="line"><span class="string">      y (nd_array (m,)) : target values</span></span><br><span class="line"><span class="string">      w (nd_array (n,)) : model parameters  </span></span><br><span class="line"><span class="string">      b (scalar)       : model parameter</span></span><br><span class="line"><span class="string">    Returns:</span></span><br><span class="line"><span class="string">      dj_dw (nd_array (n,)): The gradient of the cost w.r.t. the parameters w. </span></span><br><span class="line"><span class="string">      dj_db (scalar):       The gradient of the cost w.r.t. the parameter b. </span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    m,n = X.shape           <span class="comment">#(number of examples, number of features)</span></span><br><span class="line">    dj_dw = np.zeros((n,))  <span class="comment">#create a new array</span></span><br><span class="line">    dj_db = <span class="number">0.0</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(m):                             </span><br><span class="line">        err = (np.dot(X[i], w) + b) - y[i]   </span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(n):                         </span><br><span class="line">            dj_dw[j] = dj_dw[j] + err * X[i, j]    </span><br><span class="line">        dj_db = dj_db + err                        </span><br><span class="line">    dj_dw = dj_dw / m                                </span><br><span class="line">    dj_db = dj_db / m                                </span><br><span class="line">        </span><br><span class="line">    <span class="keyword">return</span> dj_db, dj_dw</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">gradient_descent</span>(<span class="params">X, y, w_in, b_in, alpha, num_iters</span>): </span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">      X (matrix (m,n))   : Data, m examples with n features</span></span><br><span class="line"><span class="string">      y (nd_array (m,))    : target values</span></span><br><span class="line"><span class="string">      w_in (nd_array (n,)) : initial model parameters  </span></span><br><span class="line"><span class="string">      b_in (scalar)       : initial model parameter</span></span><br><span class="line"><span class="string">      alpha (float)       : Learning rate</span></span><br><span class="line"><span class="string">      num_iters (int)     : number of iterations to run gradient descent</span></span><br><span class="line"><span class="string">    Returns:</span></span><br><span class="line"><span class="string">      w (nd_array (n,)) : Updated values of parameters </span></span><br><span class="line"><span class="string">      b (scalar)       : Updated value of parameter </span></span><br><span class="line"><span class="string">      &quot;&quot;&quot;</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># An array to store cost J and w&#x27;s at each iteration primarily for graphing later</span></span><br><span class="line">    J_history = []</span><br><span class="line">    w = copy.deepcopy(w_in)  <span class="comment">#avoid modifying global w within function</span></span><br><span class="line">    b = b_in</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(num_iters):</span><br><span class="line">        <span class="comment"># Calculate the gradient and update the parameters</span></span><br><span class="line">        dj_db,dj_dw = compute_gradient(X, y, w, b)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># Update Parameters using w, b, alpha and gradient</span></span><br><span class="line">        w = w - alpha * dj_dw    </span><br><span class="line">        b = b - alpha * dj_db </span><br><span class="line">      </span><br><span class="line">        <span class="comment"># Save cost J at each iteration</span></span><br><span class="line">        <span class="keyword">if</span> i&lt;<span class="number">100000</span>:      <span class="comment"># prevent resource exhaustion </span></span><br><span class="line">            J_history.append(compute_cost(X, y, w, b))</span><br><span class="line"></span><br><span class="line">        <span class="comment"># Print cost every at intervals 10 times or as many iterations if &lt; 10</span></span><br><span class="line">        <span class="keyword">if</span> (i % math.ceil(num_iters / <span class="number">10</span>)) == <span class="number">0</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">f&quot;Iteration <span class="subst">&#123;i:4d&#125;</span>: Cost <span class="subst">&#123;J_history[-<span class="number">1</span>]:<span class="number">8.2</span>f&#125;</span>&quot;</span>)</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">return</span> w, b, J_history <span class="comment">#return final w,b and J history</span></span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://parzival886.github.io">Jerry Zheng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://parzival886.github.io/2025/01/16/Machine-Learning/">http://parzival886.github.io/2025/01/16/Machine-Learning/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://parzival886.github.io" target="_blank">Parzival's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/note/">note</a></div><div class="post-share"><div class="social-share" data-image="/img/cover6.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="next-post pull-full" href="/2024/09/26/Physical_Experiment_Reports/" title="Physical Experiment Reports"><img class="cover" src="/img/cover5.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Physical Experiment Reports</div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a href="/2024/09/21/Biochemistry/" title="Biochemistry"><img class="cover" src="/img/cover1.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-09-21</div><div class="title">Biochemistry</div></div></a><a href="/2024/09/21/Ecology/" title="Ecology"><img class="cover" src="/img/cover2.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-09-21</div><div class="title">Ecology</div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info is-center"><div class="avatar-img"><img src="/img/1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Jerry Zheng</div><div class="author-info-description">Conquer from within.</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/parzival886"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Single-Variable-Linear-Regression"><span class="toc-number">1.</span> <span class="toc-text">Single Variable Linear Regression</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Model"><span class="toc-number">1.1.</span> <span class="toc-text">Model</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Cost-Function"><span class="toc-number">1.2.</span> <span class="toc-text">Cost Function</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Gradient-Descent"><span class="toc-number">1.3.</span> <span class="toc-text">Gradient Descent</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-in-Python"><span class="toc-number">1.4.</span> <span class="toc-text">Code in Python</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Multiple-Variables-Linear-Regression"><span class="toc-number">2.</span> <span class="toc-text">Multiple Variables Linear Regression</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Model-1"><span class="toc-number">2.1.</span> <span class="toc-text">Model</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Cost-Function-1"><span class="toc-number">2.2.</span> <span class="toc-text">Cost Function</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Gradient-Descent-1"><span class="toc-number">2.3.</span> <span class="toc-text">Gradient Descent</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-in-Python-1"><span class="toc-number">2.4.</span> <span class="toc-text">Code in Python</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/01/16/Machine-Learning/" title="Machine Learning"><img src="/img/cover6.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Machine Learning"/></a><div class="content"><a class="title" href="/2025/01/16/Machine-Learning/" title="Machine Learning">Machine Learning</a><time datetime="2025-01-16T15:41:37.000Z" title="发表于 2025-01-16 23:41:37">2025-01-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/26/Physical_Experiment_Reports/" title="Physical Experiment Reports"><img src="/img/cover5.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Physical Experiment Reports"/></a><div class="content"><a class="title" href="/2024/09/26/Physical_Experiment_Reports/" title="Physical Experiment Reports">Physical Experiment Reports</a><time datetime="2024-09-26T13:25:37.000Z" title="发表于 2024-09-26 21:25:37">2024-09-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/22/Ecology_Experiment_Reports/" title="Ecology Experiment Reports"><img src="/img/cover3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Ecology Experiment Reports"/></a><div class="content"><a class="title" href="/2024/09/22/Ecology_Experiment_Reports/" title="Ecology Experiment Reports">Ecology Experiment Reports</a><time datetime="2024-09-22T09:41:37.000Z" title="发表于 2024-09-22 17:41:37">2024-09-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/21/Bioinfomatics_Tools/" title="Bioinfomatics Tools"><img src="/img/cover4.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Bioinfomatics Tools"/></a><div class="content"><a class="title" href="/2024/09/21/Bioinfomatics_Tools/" title="Bioinfomatics Tools">Bioinfomatics Tools</a><time datetime="2024-09-21T14:28:05.000Z" title="发表于 2024-09-21 22:28:05">2024-09-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/21/Ecology/" title="Ecology"><img src="/img/cover2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Ecology"/></a><div class="content"><a class="title" href="/2024/09/21/Ecology/" title="Ecology">Ecology</a><time datetime="2024-09-21T14:27:20.000Z" title="发表于 2024-09-21 22:27:20">2024-09-21</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By Jerry Zheng</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+      
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/nipsilon.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body></html>
