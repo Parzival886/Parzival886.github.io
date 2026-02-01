@@ -1,0 +1,1064 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Developmental Boilogy | Parzival's Blog</title><meta name="author" content="Jerry Zheng"><meta name="copyright" content="Jerry Zheng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="$\mathcal{Lecture}$ $\mathcal{1}$ — 绪论发育生物学研究方法正向遗传学 化学诱变   动物：ENU（N-乙基-N-亚硝基脲），A到T的突变  植物：EMS（甲基磺酸乙酯），G&#x2F;C 到 A&#x2F;T 的转换突变    T-DNA或转座子介导基因插入：给插入序列引入RNA剪切的接受位点，能够将T-DNA引入基因外显子中 图位克隆：利用分子标记以及连锁互换的原理，确定基因的遗">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Developmental Boilogy">
+<meta property="og:url" content="http://parzival886.github.io/2025/11/29/Developmental-Boilogy/index.html">
+<meta property="og:site_name" content="Parzival&#39;s Blog">
+<meta property="og:description" content="$\mathcal{Lecture}$ $\mathcal{1}$ — 绪论发育生物学研究方法正向遗传学 化学诱变   动物：ENU（N-乙基-N-亚硝基脲），A到T的突变  植物：EMS（甲基磺酸乙酯），G&#x2F;C 到 A&#x2F;T 的转换突变    T-DNA或转座子介导基因插入：给插入序列引入RNA剪切的接受位点，能够将T-DNA引入基因外显子中 图位克隆：利用分子标记以及连锁互换的原理，确定基因的遗">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://parzival886.github.io/img/cover14.png">
+<meta property="article:published_time" content="2025-11-29T07:01:15.000Z">
+<meta property="article:modified_time" content="2026-02-01T15:56:51.462Z">
+<meta property="article:author" content="Jerry Zheng">
+<meta property="article:tag" content="course">
+<meta property="article:tag" content="note">
+<meta property="article:tag" content="Developmental">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://parzival886.github.io/img/cover14.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://parzival886.github.io/2025/11/29/Developmental-Boilogy/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>(()=>{
+      const saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+      
+      window.btf = {
+        saveToLocal: saveToLocal,
+        getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+          script.src = url
+          script.async = true
+          script.onerror = reject
+          script.onload = script.onreadystatechange = function() {
+            const loadState = this.readyState
+            if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+            script.onload = script.onreadystatechange = null
+            resolve()
+          }
+
+          Object.keys(attr).forEach(key => {
+            script.setAttribute(key, attr[key])
+          })
+
+          document.head.appendChild(script)
+        }),
+
+        getCSS: (url, id = false) => new Promise((resolve, reject) => {
+          const link = document.createElement('link')
+          link.rel = 'stylesheet'
+          link.href = url
+          if (id) link.id = id
+          link.onerror = reject
+          link.onload = link.onreadystatechange = function() {
+            const loadState = this.readyState
+            if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+            link.onload = link.onreadystatechange = null
+            resolve()
+          }
+          document.head.appendChild(link)
+        }),
+
+        addGlobalFn: (key, fn, name = false, parent = window) => {
+          const pjaxEnable = false
+          if (!pjaxEnable && key.startsWith('pjax')) return
+
+          const globalFn = parent.globalFn || {}
+          const keyObj = globalFn[key] || {}
+    
+          if (name && keyObj[name]) return
+    
+          name = name || Object.keys(keyObj).length
+          keyObj[name] = fn
+          globalFn[key] = keyObj
+          parent.globalFn = globalFn
+        }
+      }
+    
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+      
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })()</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":true,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Developmental Boilogy',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2026-02-01 23:56:51'
+}</script><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (false) {
+    btf.addGlobalFn('pjaxSend', () => { preloader.initLoading() }, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', () => { preloader.endLoading() }, 'preloader_end')
+  }
+})()</script><div id="web_bg" style="background-image: url(/img/15.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/1.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/cover14.png);"><nav id="nav"><span id="blog-info"><a href="/" title="Parzival's Blog"><span class="site-name">Parzival's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Developmental Boilogy</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-11-29T07:01:15.000Z" title="发表于 2025-11-29 15:01:15">2025-11-29</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-02-01T15:56:51.462Z" title="更新于 2026-02-01 23:56:51">2026-02-01</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Courses-in-ZJU/">Courses in ZJU</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">15.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>46分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Developmental Boilogy"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="mathcal-Lecture-mathcal-1-—-绪论"><a href="#mathcal-Lecture-mathcal-1-—-绪论" class="headerlink" title="$\mathcal{Lecture}$ $\mathcal{1}$ — 绪论"></a>$\mathcal{Lecture}$ $\mathcal{1}$ — 绪论</h1><h2 id="发育生物学研究方法"><a href="#发育生物学研究方法" class="headerlink" title="发育生物学研究方法"></a>发育生物学研究方法</h2><h3 id="正向遗传学"><a href="#正向遗传学" class="headerlink" title="正向遗传学"></a>正向遗传学</h3><ol>
+<li><strong>化学诱变</strong></li>
+</ol>
+<ul>
+<li><p>动物：<strong>ENU（N-乙基-N-亚硝基脲）</strong>，A到T的突变</p>
+</li>
+<li><p>植物：<strong>EMS（甲基磺酸乙酯）</strong>，G/C 到 A/T 的转换突变</p>
+</li>
+</ul>
+<ol>
+<li><strong>T-DNA或转座子</strong>介导基因插入：给插入序列引入RNA剪切的接受位点，能够将T-DNA引入基因外显子中</li>
+<li><strong>图位克隆</strong>：利用分子标记以及连锁互换的原理，确定基因的遗传距离</li>
+<li><strong>TAIL-PCR</strong>（热不对称交错PCR）：三种高退火温度的引物+一种低退火温度的简并引物</li>
+<li><strong>Inverted PCR</strong>（反向PCR）：酶切 -&gt; 环化 -&gt; 用包含插入序列引物扩增</li>
+<li><strong>Linker-Mediated PCR</strong>（连接介导PCR）：通过一个已知序列的合成接头与目标DNA片段连接，从而为所有目标片段提供通用的PCR引物结合位点</li>
+</ol>
+<h3 id="反向遗传学"><a href="#反向遗传学" class="headerlink" title="反向遗传学"></a>反向遗传学</h3><ol>
+<li><strong>同源重组</strong>：敲除。利用同源重组酶将标记基因插入，使目的基因失活</li>
+<li><strong>siRNA，miRNA</strong> ：敲低。缺点是斑马鱼中注射siRNA和miRNA浓度高会占据几乎所有RISC复合体，让体内miRNAs失去功能，产生大量非特异性表型</li>
+<li><strong>Morpholino</strong>反义寡核苷酸：敲低。将天然核酸的磷酸-脱氧核糖骨架替换为吗啉环和磷酸二胺连接，不改变碱基，人工合成一段与mRNA翻译起始位点互补的序列，阻止翻译进行。不会结合RISC，更加特异。</li>
+<li><strong>TALEN</strong>（转录激活因子样效应物核酸酶）：敲除。将一种能特异性识别DNA序列的蛋白质模块（TALE），与一个非特异性的DNA切割模块（FokI核酸酶）融合在一起。切割后造成双链断裂，同源重组修复和非同源末端连接可以敲除基因。</li>
+<li><strong>CRISPR/Cas9</strong>：sgRNA引导结合，Cas9切断</li>
+<li><strong>C2C2</strong>：RNA引导的RNA酶，与CRISPR类似，可以编辑RNA</li>
+<li><strong>显性负突变体</strong>：在杂合状态下（即一个等位基因突变，另一个正常）就能表现出显著的表型。这与通常的功能丧失型突变（多为隐性，需要两个等位基因都失活才表现）截然不同。</li>
+<li><strong>光遗传学</strong>：表达光敏蛋白，利用光照调控基因表达、信号通路、离子通道</li>
+</ol>
+<h3 id="胚胎致死基因研究方法"><a href="#胚胎致死基因研究方法" class="headerlink" title="胚胎致死基因研究方法"></a>胚胎致死基因研究方法</h3><ol>
+<li><strong>温敏突变体</strong>：在允许温度下存活，在限制温度下致死</li>
+<li><strong>FLP/FRT重组系统</strong>：源于酵母，有丝分裂重组，FLP重组酶只作用于FRT位点，可以产生嵌合体，从而研究隐性致死基因，常用于果蝇<img src="/images/Developmental-Boilogy/image-20251225231121111.png" alt="image-20251225231121111"></li>
+<li><blockquote>
+<p>[!IMPORTANT]</p>
+<p>==<strong>Cre/Lox P重组系统</strong>==</p>
+<p>源于P1噬菌体，纯和亲本1（组织或细胞类型特异启动子::Cre/ER）与纯和亲本2（Lox P-靶基因）杂交，F1代的特异性组织或细胞中表达Cre，在脱皮素ER的诱导下进核识别Lox P位点，完成重组。同向Lox P可以切除，反向Lox P可以倒位，也可以在不同染色体之间重组。</p>
+</blockquote>
+<p><img src="/images/Developmental-Boilogy/image-20251225232913625.png" alt="image-20251225232913625"><img src="/images/Developmental-Boilogy/image-20251225232835230.png" alt="image-20251225232835230"></p>
+</li>
+<li>遗传补偿效应：敲低一个基因会造成明显发育异常（出现表型），完全敲除此基因反而没有表型</li>
+</ol>
+<h3 id="人工表达调控"><a href="#人工表达调控" class="headerlink" title="人工表达调控"></a>人工表达调控</h3><ol>
+<li><strong>UAS/GAL4表达体系</strong>：双转基因，增强子驱动转录因子GAL4表达，GAL4结合UAS序列驱动靶基因表达，可以实现基因的<strong>过表达</strong><img src="/images/Developmental-Boilogy/image-20251226160831107.png" alt="image-20251226160831107"></li>
+<li><strong>rtTA/TRE表达系统</strong>：四环素或多西环素与rtTA转录因子结合，然后结合到四环素反应元件(TRE)上，驱动下游基因表达，表现为只有四环素存在基因才表达。通常可以构建双转基因：组织特异性启动子::rtTA，tre::目标基因，特定时间加入四环素就可以在特定组织表达目标基因</li>
+<li>人工增强启动子：植物35S，动物CMV</li>
+<li>组织特异性启动子：可以实现异位表达</li>
+</ol>
+<h2 id="基因互作研究方法"><a href="#基因互作研究方法" class="headerlink" title="基因互作研究方法"></a>基因互作研究方法</h2><ol>
+<li>DNA微阵列（基因芯片）</li>
+<li><strong>原位杂交</strong>：利用互补的荧光探针检测<strong>RNA表达</strong></li>
+<li><strong>免疫组化</strong>：利用抗体特异性结合生物组织或细胞抗原的原理，检测组织切片或胚胎细胞中的抗原（如蛋白质）的过程。检测<strong>蛋白表达水平与亚细胞定位</strong></li>
+<li><strong>ChIP</strong> <strong>and</strong> <strong>ChIPseq</strong> ：染色质免疫共沉淀，利用抗体特异性地富集某种DNA 结合蛋白及其 DNA 靶标，研究<strong>蛋白质-DNA相互作用</strong></li>
+<li><strong>酵母单杂交Y1H</strong>：①诱饵DNA序列+报告基因，②可能与诱饵DNA结合的蛋白+转录激活域。如果互作就会激活报告基因。研究<strong>蛋白质-DNA互作</strong></li>
+<li><strong>电泳位移Gel Shift</strong>：迁移速率DNA&gt;DNA+Protein&gt;DNA+Protein+Antibody.研究<strong>蛋白质-DNA互作</strong></li>
+<li>酵母双杂交Y2H：①DNA结合域+目标蛋白融合，②转录激活域+可能与目标蛋白互作的蛋白融合。如果产生互作就会激活报告基因的转录。研究<strong>蛋白质-蛋白质互作</strong></li>
+<li><strong>免疫共沉淀CoIP</strong>：采用识别目标蛋白的特异抗体拉下目标蛋白，同时也会富集到与目标蛋白互作的蛋白，研究<strong>蛋白质-蛋白质互作</strong></li>
+<li><strong>荧光共振能量转换FRET</strong>:目标蛋白A+CFP,目标蛋白B+YFP,如果产生互作，则用CFP的激发光激发后能检测到YFP的发射光，<strong>蛋白质-蛋白质互作</strong></li>
+<li><strong>酵母三杂交Y3H</strong>：①已知DNA 结合域+已知非编码RNA结合蛋白；②已知非编码RNA+目标非编码RNA；③可能与目标非编码RNA结合的蛋白+转录激活域。研究<strong>蛋白质-RNA相互作用</strong><img src="/images/Developmental-Boilogy/image-20251226164732178.png" alt="image-20251226164732178"></li>
+</ol>
+<h2 id="细胞谱系追踪"><a href="#细胞谱系追踪" class="headerlink" title="细胞谱系追踪"></a>细胞谱系追踪</h2><blockquote>
+<p>[!IMPORTANT]<br><img src="/images/Developmental-Boilogy/image-20251226165222497.png" alt="image-20251226165222497"></p>
+</blockquote>
+<h1 id="mathcal-Lecture-mathcal-2-—-模式发生机制"><a href="#mathcal-Lecture-mathcal-2-—-模式发生机制" class="headerlink" title="$\mathcal{Lecture}$ $\mathcal{2}$ — 模式发生机制"></a>$\mathcal{Lecture}$ $\mathcal{2}$ — 模式发生机制</h1><ul>
+<li>三胚层动物早起发育的基本过程：细胞分化、细胞定型或命运决定、器官发生</li>
+<li>卵裂（cleavage）：受精卵经过多次重复的有丝分裂形成很多细胞的过程，形成卵裂球</li>
+<li>原肠胚（gastula）：囊胚（blastula）的细胞通过细胞迁移，重新排列和再组合，形成双胚层或三个胚层的胚胎</li>
+<li>原肠作用（gastula）/形态发生（morphogenesis）：由囊胚形成原肠胚的细胞运动或迁移过程</li>
+</ul>
+<h2 id="细胞定型与分化"><a href="#细胞定型与分化" class="headerlink" title="细胞定型与分化"></a>细胞定型与分化</h2><ul>
+<li><p>分化概念：由同一个受精卵分裂、增殖而来的胚胎细胞经过多个相继的发育阶段（如三胚层动物的囊胚、原肠胚、神经胚等），逐渐<strong>出现差异</strong>，产生许多<strong>形态结构、生理功能和生化特征都不同</strong>的细胞类型。</p>
+</li>
+<li><p>细胞分化不是一蹴而就的，需要经过<strong>细胞定型</strong>（commitment）</p>
+</li>
+<li><p>细胞定型的过程：</p>
+<ol>
+<li><strong>特化</strong>（specification）：细胞已经向特定细胞转变，但命运<strong>仍然可以被外界信号逆转</strong></li>
+<li><strong>命运决定</strong>（determination）：已经确定分化方向，并进入特定类型细胞的分化程序，发育命运在正常发育过程中<strong>不可逆转</strong></li>
+</ol>
+<p><img src="/images/Developmental-Boilogy/image-20251226184730334.png" alt="image-20251226184730334"></p>
+</li>
+<li><p>Example：<strong>果蝇成虫盘</strong>是处在细胞定型过程中的细胞，没有分化，但已决定了分化的方向。将成虫盘的某个器官芽移植到成虫腹腔，由于没有合适的信号诱导，仍然保持分裂和未分化状态；但移植入正要变态的幼虫中，能正常发育成对应的成体结构（即便是异位移植）。</p>
+</li>
+</ul>
+<h2 id="特化的三种方式"><a href="#特化的三种方式" class="headerlink" title="特化的三种方式"></a>特化的三种方式</h2><h3 id="自主型（镶嵌型）特化（autonomous-specification）"><a href="#自主型（镶嵌型）特化（autonomous-specification）" class="headerlink" title="自主型（镶嵌型）特化（autonomous specification）"></a>自主型（镶嵌型）特化（autonomous specification）</h3><ul>
+<li><strong>由卵裂球所分得的形态发生决定因子决定</strong>，整体胚胎像是自我分化的各部分组装在一起的集合体</li>
+<li>形态发生决定因子位于受精卵的<strong>不同细胞质区域</strong>，而非细胞核决定（细胞质划分或移植实验）</li>
+<li>从胚胎中取出个特定分裂球，体外培养仍然能发育成对应的细胞，而胚胎或幼体将永久失去这个分裂球对应的子代细胞或结构</li>
+<li>线虫、海鞘、环节动物、软体动物</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20251226190518557.png" alt="image-20251226190518557"></p>
+<h3 id="调整型（条件型）特化（conditional-specification）"><a href="#调整型（条件型）特化（conditional-specification）" class="headerlink" title="调整型（条件型）特化（conditional specification）"></a>调整型（条件型）特化（conditional specification）</h3><ul>
+<li><strong>相邻细胞之间通过相互作用</strong>，决定其中的一方或双方的分化方向</li>
+<li>从采用这种方式发育的胚胎上分离出一个卵裂球，则胚胎上的其它相邻的卵裂球可以调整和改变发育命运，填补分离掉的卵裂球所留下的空缺，使其仍然可以发育成一个完整的胚胎。异位移植也不影响发育成正常成体。<strong>即细胞可以根据周围环境调整自己的发育命运。</strong></li>
+<li>调整型发育的胚胎中也存在形态发生决定子的细胞质定域，如<strong>海胆</strong>在三次卵裂后决定子定域，一二次卵裂球都能独立发育；<strong>两栖类</strong>包含灰色新月区的卵裂球都能独立发育，否则不能</li>
+<li>和镶嵌型的差异只是程度上的不同，卵裂次数或发育程度决定是否可以调整发育</li>
+<li><strong>哺乳动物</strong>：无形态发生决定子的细胞质定域，主要靠细胞相对位置决定发育命运，内部的发育成胚胎本体，外部滋养层</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20251226191746829.png" alt="image-20251226191746829"></p>
+<h3 id="合胞体特化（syncyital-specification）"><a href="#合胞体特化（syncyital-specification）" class="headerlink" title="合胞体特化（syncyital specification）"></a>合胞体特化（syncyital specification）</h3><ul>
+<li>核分裂、胞质不分裂、不形成细胞膜</li>
+<li>主要依赖受精卵合胞体中的形成素（morphogen）梯度，处在不同形成素浓度下的细胞有不同的命运<blockquote>
+<p>[!IMPORTANT]</p>
+<p>==<strong>母源基因效应</strong>==</p>
+<p>母体基因控制个体早期胚胎发育并决定了胚胎形体发育的体轴和胚胎的细胞分化大格局。母体基因在卵子发生过程中已编码好了早期卵裂及发育的程序。因此，在卵子受精后去除或破坏合子细胞核，无核的受精卵仍能正常发育成囊胚。主要通过提前合成mRNA和一些调控蛋白，受精后开始翻译。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="细胞分化机制：不同基因的表达"><a href="#细胞分化机制：不同基因的表达" class="headerlink" title="细胞分化机制：不同基因的表达"></a>细胞分化机制：不同基因的表达</h2><ul>
+<li><p>已决定和分化的细胞中遗传物质没有发生不可逆的改变</p>
+</li>
+<li><p>基因的选择性表达</p>
+</li>
+<li><p><strong>时间-空间机制</strong>：胚胎中的每个细胞都在特定的时间和空间上表达正确的基因</p>
+</li>
+<li><p>转录调控：甲基化、乙酰化、转录因子、组蛋白修饰……</p>
+</li>
+<li><p>转录后调控：mRNA剪切、稳定性调节、修饰</p>
+</li>
+<li><p>翻译后调控：蛋白质修饰（糖基化、磷酸化……）</p>
+</li>
+<li><blockquote>
+<p>[!IMPORTANT]</p>
+<p><strong>==印迹基因==</strong></p>
+<p>表达取决于来自父本还是母本。在配子发生过程中几乎所有基因组的DNA序列上的修饰（甲基化）都被抹掉。只有有部分基因（哺乳动物中大约有100个此类基因）DNA存在着甲基化，但在不同配子（精子和卵子）中是不同的，有些仅在精子中被甲基化，有些仅在卵子中被甲基化。多数用于严格调控子代是通过有性生殖产生的。</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="mathcal-Lecture-mathcal-3-—-形态发生机制"><a href="#mathcal-Lecture-mathcal-3-—-形态发生机制" class="headerlink" title="$\mathcal{Lecture}$ $\mathcal{3}$ — 形态发生机制"></a>$\mathcal{Lecture}$ $\mathcal{3}$ — 形态发生机制</h1><h2 id="形态发生"><a href="#形态发生" class="headerlink" title="形态发生"></a>形态发生</h2><ul>
+<li>发育不仅仅只是细胞分化，不同细胞不是随机排列在机体内，而是<strong>有机的整合成具有三维空间结构特征、特定功能的不同组织和器官</strong>。比如：肢体、心脏等</li>
+<li>同种细胞也可以构建成不同形态形成不同的连接，比如：不同类型的骨头。这种不同组织形式的构建就是形态发生。</li>
+</ul>
+<h2 id="细胞黏附与分选"><a href="#细胞黏附与分选" class="headerlink" title="细胞黏附与分选"></a>细胞黏附与分选</h2><ul>
+<li>不同细胞间的亲和性不一样，细胞有迁移、分选到正确胚胎发育位置的能力</li>
+<li>细胞互作<strong>热动力学模型</strong>：能量最低，粘附力大的在内部</li>
+<li>钙粘蛋白：膜外部分与其他细胞的钙粘蛋白结合，膜内部分与肌动蛋白结合</li>
+<li>细胞表面的钙粘蛋白越多，粘附力越大</li>
+</ul>
+<h2 id="细胞外基质信号"><a href="#细胞外基质信号" class="headerlink" title="细胞外基质信号"></a>细胞外基质信号</h2><ul>
+<li>细胞外基质：主要是蛋白聚糖。<strong>纤连蛋白</strong>将迁移细胞、层粘连蛋白、硫酸肝素等联系在一起。</li>
+<li><strong>整合素</strong>(integrin)：胞外基质信号的受体，在胞外结合纤连蛋白，活化后改变细胞骨架</li>
+</ul>
+<h2 id="上皮-间充质转换"><a href="#上皮-间充质转换" class="headerlink" title="上皮-间充质转换"></a>上皮-间充质转换</h2><blockquote>
+<p>[!IMPORTANT]</p>
+<p><strong>==上皮-间充质转换==</strong>（Epithelial-mesenchymal transition, EMT）</p>
+<p>紧密连接的上皮细胞受到旁分泌因子的影响，细胞黏附被打破，基底膜解体，释放出来形成松散缺乏细胞连接的间充质细胞。</p>
+<p>它赋予细胞转移和入侵的能力，包括干细胞特征、减少凋亡与衰老，和促进免疫抑制，不仅在发育过程中起着关键的作用（原肠胚、神经嵴形成，心脏、肝胰腺形成），而且还参与组织愈合、器官纤维化和癌症发生等过程。</p>
+</blockquote>
+<h2 id="细胞信号传导"><a href="#细胞信号传导" class="headerlink" title="细胞信号传导"></a>细胞信号传导</h2><ul>
+<li>诱导者、感应者</li>
+<li>相互诱导：<ol>
+<li>指导性相互作用：来自诱导细胞的信号对启动感应细胞中新基因的表达是必须的</li>
+<li>允许性相互作用：感应细胞已经特化了，只需要一种环境允许这些特性的出现。</li>
+</ol>
+</li>
+<li>诱导具有区域特异性</li>
+</ul>
+<h2 id="旁分泌信号（paracrine-factor）"><a href="#旁分泌信号（paracrine-factor）" class="headerlink" title="旁分泌信号（paracrine factor）"></a>旁分泌信号（paracrine factor）</h2><ul>
+<li>形成素梯度诱导产生不同细胞命运</li>
+<li>信号传导的级联反应</li>
+<li>运输：自由扩散（通常需要一些蛋白或胞外基质的协助）、初级纤毛定向运动、丝状伪足、胞外囊泡<blockquote>
+<p>[!IMPORTANT]</p>
+<ul>
+<li>成纤维生长因子家族（fibroblast growth factor, <strong>FGF</strong>）受体酪氨酸激酶：<img src="/images/Developmental-Boilogy/image-20251229133620749.png" alt="image-20251229133620749"></li>
+<li>非受体酪氨酸激酶<strong>JAK-STAT</strong>通路：酪蛋白基因激活（FGF信号也可以直接磷酸化STAT来激活这个通路）<img src="/images/Developmental-Boilogy/image-20251229133831942.png" alt="image-20251229133831942"></li>
+<li><strong>Hedgehog</strong>家族：<strong>sonic hh</strong>:神经管发育与附肢形成；desert hh:精巢支持细胞中，精子发生；indian hh:消化管和软骨中，骨发育。hh信号翻译后需要<strong>自裂解、棕榈酰和胆固醇修饰</strong>，最后结合在膜上或分泌。<img src="/images/Developmental-Boilogy/image-20251229134822306.png" alt="image-20251229134822306"></li>
+<li><strong>Wnt</strong>信号通路：1. 通过$\beta$-catenin促进转录；2. 激活Rho GTPase，改变细胞形状、极性和运动能力；3. 联合G蛋白激活PLC，产生IP3，内质网释放Ca2+激活钙调蛋白<img src="/images/Developmental-Boilogy/屏幕截图 2025-12-29 135302.png" alt="屏幕截图 2025-12-29 135302"></li>
+<li><strong>TGF-$\beta$</strong>超家族：包括TGF-$\beta$,Nodal,Activin,骨形态发生蛋白（BMP）,VG1家族等，==<strong>在调节细胞外基质的形成，EMT转化、控制肾脏、肺等器官通过上皮分支以形成导管、腺体的过程中有关键的作用。</strong>==<img src="/images/Developmental-Boilogy/image-20251229140428752.png" alt="image-20251229140428752"></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h2 id="近分泌信号（contact-dependent）"><a href="#近分泌信号（contact-dependent）" class="headerlink" title="近分泌信号（contact dependent）"></a>近分泌信号（contact dependent）</h2><blockquote>
+<p>[!IMPORTANT]</p>
+<ul>
+<li><strong>Notch</strong>信号通路：对肾脏、胰脏、心脏发育有重要作用<img src="/images/Developmental-Boilogy/image-20251229142309729.png" alt="image-20251229142309729"></li>
+</ul>
+</blockquote>
+<h1 id="mathcal-Lecture-mathcal-4-—-干细胞"><a href="#mathcal-Lecture-mathcal-4-—-干细胞" class="headerlink" title="$\mathcal{Lecture}$ $\mathcal{4}$ — 干细胞"></a>$\mathcal{Lecture}$ $\mathcal{4}$ — 干细胞</h1><ul>
+<li>干细胞：具有细胞分裂自我更新能力，并且子代细胞有能力发育和分化成各种不同细胞。</li>
+<li>干细胞调节机制：<ol>
+<li>物理机制：巢结构改变，胞外基质，粘附因子，细胞间机械力，细胞密度等能够改变干细胞行为</li>
+<li>化学调节：内分泌、旁分泌、近分泌因子</li>
+<li>细胞质决定因子：不对称分裂</li>
+</ol>
+</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20251229143550393.png" alt="image-20251229143550393"></p>
+<ul>
+<li>胚胎干细胞（全能干细胞）：内细胞团发育成胚胎本体。滋养层细胞不对称分裂可以产生内细胞团。<ul>
+<li><strong>Hippo</strong>信号通路：滋养层细胞底部与内细胞团黏附，激活Amot,再激活Hippo级联反应，使得Yap/Taz不能进核，无法启动抑制性转录因子cdx2，干性转录因子Oct4表达启动</li>
+</ul>
+</li>
+<li>成体干细胞微环境(干细胞巢)：<ul>
+<li>果蝇卵巢干细胞：Cap细胞与生殖干细胞（GSC）黏附，Cap细胞分泌TGF-$\beta$信号，GSC分裂时靠近Cap的细胞维持干性，远端形成卵母细胞</li>
+<li>肠道干细胞（CBCC）：潘氏细胞分泌Wnt3a+Dll4，维持CBCC干性；间质细胞形成Wnt2b+Bmp4相反梯度，Wnt2b维持CBCC干性，Bmp4促进分化。</li>
+<li>造血干细胞：与成骨细胞黏附（低氧）维持静息状态，基质细胞和间充质干细胞分泌CXCL12信号促进静息的细胞向血管（富氧）迁移并开始分裂</li>
+</ul>
+</li>
+<li>==诱导多能干细胞iPSC==：导入<strong>特定的转录因子</strong>将终末分化的体细胞（如皮肤细胞）重编程为多能性干细胞。</li>
+<li>==类器官==：通过体外培养将全能干细胞培养成具有一定的<strong>三维结构</strong>，含有<strong>多种细胞类型</strong>，类似体内某种组织或器官的结构，并具有相似的功能</li>
+</ul>
+<h1 id="mathcal-Lecture-mathcal-5-—-性别决定与配子发生"><a href="#mathcal-Lecture-mathcal-5-—-性别决定与配子发生" class="headerlink" title="$\mathcal{Lecture}$ $\mathcal{5}$ — 性别决定与配子发生"></a>$\mathcal{Lecture}$ $\mathcal{5}$ — 性别决定与配子发生</h1><h2 id="染色体性别决定"><a href="#染色体性别决定" class="headerlink" title="染色体性别决定"></a>染色体性别决定</h2><ul>
+<li>XY：哺乳动物，XX雌性，XY雄性</li>
+<li>ZW：鸟类，ZZ雄性，ZW雌性</li>
+<li>X数/常染色体组数比值：果蝇，≤0.5雄性，≥1.0雌性</li>
+<li>初级性别决定（卵巢和睾丸决定）与次级性别决定（激素决定）</li>
+<li>雄性和雌性的生殖腺来自共同的前体：<strong>双潜能生殖腺</strong></li>
+</ul>
+<h2 id="哺乳动物初级性别决定的机制"><a href="#哺乳动物初级性别决定的机制" class="headerlink" title="==哺乳动物初级性别决定的机制=="></a>==哺乳动物初级性别决定的机制==</h2><h3 id="雄性"><a href="#雄性" class="headerlink" title="雄性"></a>雄性</h3><ol>
+<li><strong>SRY</strong>：Y染色体性别决定子，编码一个转录因子TDF，存在于正常XY雄性和突变的XX雄性中，若发生突变成为XY雌性</li>
+<li><strong>SOX9</strong>：常染色体睾丸决定基因，仅在精巢中表达，能替代SRY，正反馈调节维持自身转录，阻断$\beta-$catenin诱导的卵巢发育，启动抗穆勒氏管激素基因(AMH)，启动FGF9维持自生表达</li>
+</ol>
+<h3 id="雌性"><a href="#雌性" class="headerlink" title="雌性"></a>雌性</h3><ol>
+<li><strong>WNT4</strong>：从双潜能生殖腺中就开始表达，通过$\beta-$catenin激活下游基因</li>
+<li><strong>DAX1</strong>：抑制SRY</li>
+<li><strong>RSPO1</strong>：和WNT4互作，促进$\beta-$catenin表达</li>
+</ol>
+<p><img src="/images/Developmental-Boilogy/image-20260101231736629.png" alt="image-20260101231736629"></p>
+<h2 id="果蝇性别决定"><a href="#果蝇性别决定" class="headerlink" title="==果蝇性别决定=="></a>==果蝇性别决定==</h2><p><img src="/images/Developmental-Boilogy/image-20260101232240845.png" alt="image-20260101232240845"></p>
+<h3 id="分子机制"><a href="#分子机制" class="headerlink" title="分子机制"></a>分子机制</h3><ol>
+<li><strong>Sxl</strong>:性致死基因。早期启动子和晚期启动子。X编码早期激活因子，常染色体编码早期抑制因子，X较少的时候激活因子被抑制，Sxl无法启动，反之启动。Sxl蛋白作用于Sxl前体RNA，造成可变剪接。雌性能表达3号外显子被剪掉的正常Sxl蛋白，雄性因为提前终止无Sxl蛋白。</li>
+<li><strong>Tra</strong>: Sxl介导雌雄特异的可变剪接</li>
+<li><strong>Dsx</strong>: Tra介导的雌雄特异的可变剪接</li>
+<li><strong>Fruitless</strong>: Tra介导</li>
+</ol>
+<p><img src="/images/Developmental-Boilogy/image-20260101233738305.png" alt="image-20260101233738305"></p>
+<h2 id="环境性别决定"><a href="#环境性别决定" class="headerlink" title="环境性别决定"></a>环境性别决定</h2><ol>
+<li><p>乌龟、鳄鱼性别决定和受精卵孵化温度有关</p>
+</li>
+<li><p>鸟类和爬行类<strong>雌激素是卵巢发育必须的</strong>，即使是在雄性化温度下，雌激素也可以超越温度的影响诱导卵巢发育。同样，即使受精卵是在雌性化温度下孵化，向受精卵注入雌激素合成的抑制剂即可产生雄性后代。</p>
+</li>
+<li><blockquote>
+<p>[!IMPORTANT]</p>
+<p>温度决定的机制</p>
+<p><strong>芳香化酶</strong>的活性由温度决定，可以将高通转化为雌激素。低温活性低，所以孵化的全是雄性。高温反之，中间温度转化不完全，两种性别都有。</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="原始生殖细胞迁移"><a href="#原始生殖细胞迁移" class="headerlink" title="原始生殖细胞迁移"></a>原始生殖细胞迁移</h2><ul>
+<li>原始生殖细胞：Primordial germ cell, <strong>PGC</strong>。胚胎早期产生的具有分化为生殖细胞潜能的体细胞。</li>
+<li>PGC是生殖细胞的前体细胞，在其他地方产生后<strong>迁移</strong>到发育的性腺中</li>
+<li>大多数动物的PGC由卵子的细胞质决定子特化，蝾螈和<strong>哺乳类</strong>中通过<strong>相邻细胞的相互作用特化</strong></li>
+<li><strong>趋化因子SDF1及其受体CXCR4</strong>是PGC迁移所必需的</li>
+<li>惰性基因假说：生殖质中的成分抑制转录和翻译，因而阻止细胞分化成任何其他的类型。根据这种假说，细胞变为生殖细胞是因为被禁止变为任何其他类型的细胞。这种转录抑制在果蝇、蛙和线虫等几个物种的生殖细胞中都被观察到了 。</li>
+</ul>
+<h2 id="减数分裂"><a href="#减数分裂" class="headerlink" title="减数分裂"></a>减数分裂</h2><ul>
+<li><blockquote>
+<p>[!IMPORTANT]</p>
+<p>雌性：中肾<strong>视黄酸RA</strong>促进<strong>Stra8</strong>表达，卵母细胞胚胎时就启动减数分裂</p>
+<p>雄性：睾丸分泌<strong>Cyp26b1</strong>(RA降解酶)，生殖细胞在胚胎不减数分裂，青春期精原细胞合成<strong>BMP8b</strong>才启动</p>
+</blockquote>
+</li>
+<li><p>减数第一次分裂前期：细线、偶线、粗线、双线</p>
+</li>
+<li><p><strong>联会复合体</strong>在偶线期开始出现，粗线期最明显，形成二价体</p>
+</li>
+<li><p>哺乳动物中，雌性出生时生殖细胞停留在<strong>双线期</strong>，排卵时继续减数分裂</p>
+</li>
+</ul>
+<h2 id="哺乳动物精子发生Spermatogenesis"><a href="#哺乳动物精子发生Spermatogenesis" class="headerlink" title="哺乳动物精子发生Spermatogenesis"></a>哺乳动物精子发生Spermatogenesis</h2><ul>
+<li>结构：头部顶体、核，中间中心体、线粒体，尾部纤毛、微管</li>
+<li>主要过程：<ol>
+<li><strong>精原细胞增殖</strong>：精原细胞有丝分裂增加数量。促滤泡激素<strong>FSH</strong>调节支持细胞分泌<strong>GDNF</strong>（<strong>高-精原，低-精母</strong>）</li>
+<li><strong>初级精母细胞减数第一次分裂</strong>：B型精原细胞中RA启动Stra8</li>
+<li><strong>次级精母细胞减数第二次分裂</strong>：形成四个单倍体精子细胞，此时仍有<strong>细胞质桥</strong>连接</li>
+<li><strong>精子变形</strong>：染色质高度浓缩（组蛋白被鱼精蛋白取代），高尔基体发育成顶体，中心体形成鞭毛，线粒体向核的后端集中形成线粒体环</li>
+</ol>
+</li>
+<li><strong>支持细胞</strong>：与精子紧密联系、营养支持和保护、产生雄激素结合蛋白（ABP）、将精子转运到内腔（控制精子发生率）、增加雄激素水平、分泌精液、建立血睾屏障（保护精子不受外界小分子干扰）</li>
+<li><strong>间质细胞</strong>：分泌睾酮</li>
+<li>激素调节：<img src="/images/Developmental-Boilogy/image-20260102013256486.png" alt="image-20260102013256486"></li>
+</ul>
+<h2 id="哺乳动物卵子发生-Oogenesis"><a href="#哺乳动物卵子发生-Oogenesis" class="headerlink" title="哺乳动物卵子发生 Oogenesis"></a>哺乳动物卵子发生 Oogenesis</h2><ul>
+<li>主要过程：<ol>
+<li>增殖期：卵原细胞通过有丝分裂快速增殖</li>
+<li>生长期：卵母细胞合成和积累大量<strong>早期胚胎发育所需要的营养物质和形态发生调控因子</strong>等细胞质成分，体积明显增加的时期。小生长期卵核膨大成为<strong>生发泡</strong>，大生长期也叫<strong>卵黄发生</strong>期。高尔基体产生<strong>皮层颗粒</strong>，迁移到<strong>细胞周质</strong></li>
+<li>成熟期：在一些激素（如孕酮）的作用下，解除前期I的限制，继续减数分裂。【卵表成熟】表面物质排列规则化，准备对精子应答。【卵质成熟】细胞出出现促成熟因子<strong>MPF</strong>，以及受精后发育所需的因子。【卵核成熟】生发泡破裂，雌雄原核结合与卵裂相关因子进入细胞质</li>
+</ol>
+</li>
+<li>两次抑制：<ol>
+<li>减I前：卵母细胞出生前启动减数分裂，排卵前才继续</li>
+<li>减II中：排卵后等待受精</li>
+<li>分子机制：第一次抑制后启动是孕酮磷酸化MPF(p34+cyclinB)，第二次是受精后钙调蛋白促进CSF分解<img src="/images/Developmental-Boilogy/image-20260102021644258.png" alt="image-20260102021644258"></li>
+</ol>
+</li>
+<li>附属细胞：<ol>
+<li>滤泡细胞：外层，分泌雌激素和孕酮，调节生长发育成熟和排卵</li>
+<li>颗粒细胞：内层</li>
+<li>营养细胞（滋养细胞）：提供营养，昆虫特有，细胞质桥与卵母细胞相连</li>
+</ol>
+</li>
+<li>均黄卵、端黄卵和中央黄卵</li>
+<li>卵子的细胞质：动物极/植物极，皮层+内质</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20260102020815238.png" alt="image-20260102020815238"></p>
+<blockquote>
+<p>[!IMPORTANT]</p>
+<p>==精子和卵子发生差异比较==</p>
+<p><img src="/images/Developmental-Boilogy/image-20260102022541642.png" alt="image-20260102022541642"></p>
+<p><img src="/images/Developmental-Boilogy/image-20260102022602306.png" alt="image-20260102022602306"></p>
+</blockquote>
+<h1 id="mathcal-Lecture-mathcal-6-—-受精"><a href="#mathcal-Lecture-mathcal-6-—-受精" class="headerlink" title="$\mathcal{Lecture}$ $\mathcal{6}$ — 受精"></a>$\mathcal{Lecture}$ $\mathcal{6}$ — 受精</h1><h2 id="海胆体外受精"><a href="#海胆体外受精" class="headerlink" title="海胆体外受精"></a>海胆体外受精</h2><ul>
+<li><p>卵子膜外结构：细胞质膜（与精子膜融合）、<strong>卵黄被</strong>（精卵识别）、<strong>卵胶膜</strong>（糖蛋白网，吸引或激活精子）</p>
+</li>
+<li><p>卵子膜内结构：雌原核、皮质（紧贴内膜凝胶样细胞质）、皮质颗粒（类似精子顶体泡，高尔基体衍生结构，内含蛋白水解酶）</p>
+</li>
+<li><p>精子趋化性：可以进行受精的卵子会分泌<strong>趋化因子</strong>，激活精子细胞膜上的<strong>受体鸟苷酸环化酶</strong>，合成cGMP,开启钙离子通道，使精子沿趋化因子梯度运动</p>
+</li>
+<li><p>==<strong>顶体反应</strong>==：顶体泡胞吐，释放蛋白酶分解出从卵胶膜到细胞表面的通路。一旦到达，顶体突起，利用结合蛋白黏附在卵黄被上。顶体反应因为精子识别卵胶膜中<strong>物种特异性的多糖</strong>而启动。分子机制主要是<strong>产生IP3并激活一些离子通道</strong>，引起胞吐<img src="/images/Developmental-Boilogy/image-20260102151247305.png" alt="image-20260102151247305"></p>
+</li>
+<li><p>卵黄被识别：物种特异性的<strong>结合蛋白bindin</strong></p>
+</li>
+<li><p>细胞膜融合：卵子肌动蛋白聚合，形成<strong>受精锥</strong>；结合蛋白有疏水序列促进膜融合</p>
+</li>
+<li><p>==<strong>阻止多精入卵</strong>==：</p>
+<ol>
+<li><p><strong>快阻断</strong>：<strong>膜电位</strong>变化。<strong>来自精子的NAADP</strong>引起卵细胞<strong>钠离子通道关闭</strong>，静息电位从-70mV转为+20mV。精子不能和有正电位的卵子融合。精子结合1-3秒后就会发生，但仅能维持1min左右</p>
+</li>
+<li><p><strong>慢阻断</strong>：</p>
+<blockquote>
+<p>[!IMPORTANT]</p>
+<p>==<strong>皮质颗粒反应</strong>==</p>
+<p><strong>皮层颗粒膜与卵母细胞质膜融合，将皮层颗粒内容物释放到卵周腔（</strong>卵黄膜/透明带和卵母细胞质膜之间的空腔<strong>），并形成受精膜的过程。</strong>主要通过PLC-PIP2-IP3-CA2+实现胞吐。</p>
+<p>内容物：丝氨酸蛋白酶（切断bindin连接）、粘多糖（产生渗透梯度，水分进入扩大卵周腔）、过氧化物酶（酪氨酸交错链接固化或硬化受精膜）、透明蛋白（形成受精卵被膜）</p>
+<p><img src="/images/Developmental-Boilogy/image-20260102154017996.png" alt="image-20260102154017996"></p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li><p>代谢激活：<img src="/images/Developmental-Boilogy/image-20260102154300159.png" alt="image-20260102154300159"></p>
+</li>
+<li><p>遗传物质融合：受精前已经完成减数分裂，雌雄原核直接融合。雄原核<strong>旋转180°</strong>，核膜解体，卵细胞质中的激酶使精子染色质<strong>去致密</strong>。精子中心粒伸出微管整合卵子微管，形成<strong>星状体</strong>，互相靠近最终融合。</p>
+</li>
+</ul>
+<h2 id="哺乳动物体内受精"><a href="#哺乳动物体内受精" class="headerlink" title="哺乳动物体内受精"></a>哺乳动物体内受精</h2><ul>
+<li><strong>透明带</strong>：哺乳动物卵的<strong>细胞外被</strong>是一层独立的<strong>厚基质</strong>。糖蛋白ZP1,2,3,4</li>
+<li><strong>精子获能反应</strong>：①去掉表面的胆固醇、氨基多糖，激活腺苷环化酶，cAMP浓度升高激活PKA，精子活化；②表面糖蛋白发生改变，为顶体反应做好准备</li>
+<li>顶体反应：<strong>精子与ZP3交联后诱发顶体反应</strong>，不形成显著顶体突起，<strong>头部侧面</strong>与卵子接触（赤道区）</li>
+<li>细胞膜融合：<strong>顶体反应后与ZP2结合</strong>，穿越透明带，最终<strong>精子表面的Izumo和卵子表面的Juno</strong>特异性结合，介导膜融合</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20260102163331709.png" alt="image-20260102163331709"></p>
+<ul>
+<li>阻止多精入卵：<ol>
+<li>无快阻断</li>
+<li>慢阻断：皮质颗粒释放切割ZP2，Juno蛋白从卵子膜上解离并在卵外结合精子</li>
+</ol>
+</li>
+<li>遗传物质融合：<ol>
+<li>雄原核形成：精子核膜解体，卵子的谷胱甘肽分解鱼精蛋白二硫键，去致密，组蛋白取代鱼精蛋白，核膜重建</li>
+<li>雌原核形成：<strong>先完成减II</strong>，每条染色体都被膜包裹，染色体小泡合并形成雌原核</li>
+<li>两个原核互相靠近但<strong>不立刻融合</strong>，有丝分裂一次，两细胞期出现真正的二倍体细胞核</li>
+</ol>
+</li>
+</ul>
+<h2 id="孤雌生殖和雌核发育"><a href="#孤雌生殖和雌核发育" class="headerlink" title="孤雌生殖和雌核发育"></a>孤雌生殖和雌核发育</h2><ul>
+<li>孤雌生殖：指<strong>完全无精子参与作用</strong>，而仅仅借助物理或化学因素的刺激而产生全部雌性后裔的生殖方式。</li>
+<li>雌核发育：需要雄性精子刺激才开始发育，受精后<strong>不发生雌雄原核的融合</strong>，<strong>精子染色体被排斥掉</strong>，故仅由雌核的遗传物质主导发育过程的生殖方式。</li>
+</ul>
+<h1 id="mathcal-Lecture-mathcal-7-—-卵裂、囊胚和原肠运动"><a href="#mathcal-Lecture-mathcal-7-—-卵裂、囊胚和原肠运动" class="headerlink" title="$\mathcal{Lecture}$ $\mathcal{7}$ — 卵裂、囊胚和原肠运动"></a>$\mathcal{Lecture}$ $\mathcal{7}$ — 卵裂、囊胚和原肠运动</h1><h2 id="卵裂（cleavage）"><a href="#卵裂（cleavage）" class="headerlink" title="卵裂（cleavage）"></a>卵裂（cleavage）</h2><ul>
+<li>卵裂的方向：经线裂、纬线裂、切线裂</li>
+</ul>
+<h3 id="全裂（均黄卵和中量黄卵）"><a href="#全裂（均黄卵和中量黄卵）" class="headerlink" title="全裂（均黄卵和中量黄卵）"></a>全裂（均黄卵和中量黄卵）</h3><ol>
+<li>辐射型卵裂：棘皮动物（海胆）、文昌鱼，卵裂沟有规律地互相垂直</li>
+<li>螺旋型卵裂：腹足类（螺），纺锤体会转动，卵裂球螺旋状排列</li>
+<li>两侧对称型卵裂：尾索动物（海鞘）、线虫</li>
+<li>转动型卵裂：哺乳动物，第二次卵裂一个经线裂，另一个纬线裂</li>
+<li>移位辐射型：两栖类（蛙），<strong>中量黄卵</strong>，分裂沟偏向动物极，第一次卵裂的乱猎狗尚未穿过植物极，第二次卵裂的卵裂沟已经在动物极形成。一种由全裂向不全裂过度的现象。</li>
+</ol>
+<h3 id="不全裂（端黄卵和中央黄卵）"><a href="#不全裂（端黄卵和中央黄卵）" class="headerlink" title="不全裂（端黄卵和中央黄卵）"></a>不全裂（端黄卵和中央黄卵）</h3><ol>
+<li>两侧对称型不全裂：头足类（鱿鱼），两侧对称，但植物极不分裂</li>
+<li>盘状卵裂：鱼类、鸟类、爬行类，卵裂局限于受精卵的动物极，富含卵黄的植物极保持不分裂状态，结果形成盘状的<strong>胚盘</strong>。鸟类的卵黄含量最多，细胞质与细胞核被挤到动物极的顶点区域，称为细胞质盘，也叫<strong>潘氏核</strong>，受精后发育成胚盘。</li>
+<li>表面卵裂：昆虫（果蝇），受精后细胞核先在卵的中央分裂，产生由少量细胞质包裹着的细胞核，称为<strong>活质体</strong>。多次核分裂后大部分活质体逐渐<strong>迁移到卵的周围</strong>，并与卵周质结合，形成<strong>包围卵黄</strong>的合胞体。然后每个活质体被质膜包围形成分独立完整的裂球。少量的活质体仍然留在卵黄中。</li>
+</ol>
+<h3 id="卵裂的特点"><a href="#卵裂的特点" class="headerlink" title="卵裂的特点"></a>卵裂的特点</h3><ul>
+<li><p>受精卵细胞质中<strong>物质的相对空间位置</strong>在卵裂前和卵裂后基本一致</p>
+</li>
+<li><p>胚胎体积极少增加，<strong>核质比升高</strong></p>
+</li>
+<li><p>卵裂的速度和卵裂球的排列方式完全由母体储藏在<strong>卵子细胞质中的蛋白质和mRNA控制</strong>，合子核基因组在囊胚中期后才开始转录，在卵裂期基本不起作用（==哺乳动物例外==）</p>
+</li>
+<li><p>卵裂的速度虽然与环境温度有关，但主要决定于遗传因素</p>
+</li>
+<li><blockquote>
+<p>[!IMPORTANT]</p>
+<p><strong>母源-胚胎转换</strong>MTZ</p>
+<p>发育调控的主导权从完全依赖于<strong>母源基因产物</strong>（由卵母细胞在生长和成熟过程中合成并储存在卵子中），平稳过渡到由<strong>胚胎自身基因组</strong>表达产物所主导。</p>
+<p>哺乳动物发生在第一次卵裂</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="卵裂与进化"><a href="#卵裂与进化" class="headerlink" title="卵裂与进化"></a>卵裂与进化</h3><p>  棘皮、原始半索（螺旋型/辐射型）-&gt; 尾索（两侧对称）-&gt; 鱼类（盘状卵裂）-&gt; 爬行/鸟类（卵黄进一步增多，盘状卵裂）-&gt; 低等卵胎生哺乳（盘状卵裂）-&gt; 高等哺乳（直接从母体获得营养，恢复全裂）</p>
+<h2 id="囊胚"><a href="#囊胚" class="headerlink" title="囊胚"></a>囊胚</h2><ol>
+<li>腔囊胚：皮球状，主要为辐射型卵裂和转动型卵裂产生。两栖类<strong>偏囊胚</strong></li>
+<li>实囊胚：螺旋型卵裂产物，不含空腔</li>
+<li>表面囊胚：昆虫表面卵裂产物，囊胚壁一层细胞，中间为卵黄，没有空腔</li>
+<li>盘状囊胚：端黄卵盘状卵裂产物，胚盘和卵黄之间出现一个扁腔为<strong>胚盘下腔</strong>，鱼类<strong>下胚层+上胚层</strong>，鸟类<strong>明区+暗区+边缘带</strong></li>
+</ol>
+<p><img src="/images/Developmental-Boilogy/image-20260102224504918.png" alt="image-20260102224504918"></p>
+<h2 id="原肠运动"><a href="#原肠运动" class="headerlink" title="原肠运动"></a>原肠运动</h2><ul>
+<li>原肠胚：囊胚的细胞通过细胞<strong>迁移，重新排列和再组合</strong>，形成双胚层或三个胚层的胚胎。留在外面的的细胞组成的胚层称为外胚层，迁移到内部的细胞组成的胚层称为内胚层或中内胚层</li>
+<li>原肠运动：由囊胚形成原肠胚的细胞运动或迁移过程</li>
+<li><strong>内陷</strong>（植物极成片陷入）、<strong>内卷</strong>（从胚孔向内卷入）、<strong>内移</strong>（脱离外层进入囊胚腔）、<strong>分层</strong>（表面细胞纵向分裂形成两层）、<strong>外包</strong>（从动物极往植物极包裹）、<strong>集中和延伸</strong>（向胚孔或原条处集中并向一定方向延伸）</li>
+<li>原口动物：原肠运动内陷的孔最终发育成成体的<strong>口</strong>（扁形、线虫、节肢、软体、环节）</li>
+<li>后口动物：原肠运动内陷的孔最终发育成成体的<strong>肛门</strong>（棘皮、半索、脊索）</li>
+</ul>
+<h1 id="mathcal-Lecture-mathcal-8-—-螺和线虫的胚胎发育（原口无脊椎）"><a href="#mathcal-Lecture-mathcal-8-—-螺和线虫的胚胎发育（原口无脊椎）" class="headerlink" title="$\mathcal{Lecture}$ $\mathcal{8}$ — 螺和线虫的胚胎发育（原口无脊椎）"></a>$\mathcal{Lecture}$ $\mathcal{8}$ — 螺和线虫的胚胎发育（原口无脊椎）</h1><h2 id="螺"><a href="#螺" class="headerlink" title="螺"></a>螺</h2><ul>
+<li>螺旋型卵裂，从第三次开始，每次旋转45°</li>
+<li>螺旋方向决定：<ol>
+<li><strong>卵子中的<em>formin</em> mRNA</strong>（D）控制<strong>右旋（顺时针）</strong>，突变无功能（d）就左旋。母本是Dd，自带也都是右旋，因为在卵子发生的时候等位基因没有分离，仍能表达正常formin<img src="/images/Developmental-Boilogy/image-20260102231659234.png" alt="image-20260102231659234"></li>
+<li>往哪边旋<strong>胚胎Nodal</strong>就在哪边表达，激活<strong>Nodal-Pitx1</strong>信号</li>
+</ol>
+</li>
+<li><strong>极叶和卵裂球D</strong>：极叶是一部分<strong>细胞质</strong>，不参与分裂。第一次卵裂分配到卵裂球CD，第二次卵裂分配到<strong>卵裂球D</strong>。<ul>
+<li>移除极叶或卵裂球D：肠内胚层、中胚层的肾和心脏，以及部分外胚层器官(比如眼)无法形成，但剩余细胞能正常发育。【==自主型特化==】</li>
+</ul>
+</li>
+<li>动物极小卵裂球分化为外胚层，植物极大卵裂球分化为内胚层；卵裂球D决定了中内胚层结构分化</li>
+</ul>
+<h2 id="线虫"><a href="#线虫" class="headerlink" title="线虫"></a>线虫</h2><ul>
+<li>雌雄同体</li>
+<li>生殖腺远端有丝分裂，近端减数分裂，先形成精子后形成卵子</li>
+<li>转动型卵裂<img src="/images/Developmental-Boilogy/image-20260102233126419.png" alt="image-20260102233126419"></li>
+<li>前后轴形成：<strong>精子中心粒诱导PAR2/PAR1在附近聚集</strong>，第一次有丝分裂确定前后轴。后轴P细胞谱系产生生殖细胞。</li>
+<li>原肠运动中细胞会发生融合形成巨型细胞</li>
+</ul>
+<h1 id="mathcal-Lecture-mathcal-9-—-果蝇的胚胎发育（体轴特化）"><a href="#mathcal-Lecture-mathcal-9-—-果蝇的胚胎发育（体轴特化）" class="headerlink" title="$\mathcal{Lecture}$ $\mathcal{9}$ — 果蝇的胚胎发育（体轴特化）"></a>$\mathcal{Lecture}$ $\mathcal{9}$ — 果蝇的胚胎发育（体轴特化）</h1><p><a href="http://parzival886.github.io/files/Dev-1.pdf"><strong>思维导图</strong></a></p>
+<h1 id="mathcal-Lecture-mathcal-10-—-海胆的胚胎发育（后口无脊椎）"><a href="#mathcal-Lecture-mathcal-10-—-海胆的胚胎发育（后口无脊椎）" class="headerlink" title="$\mathcal{Lecture}$ $\mathcal{10}$ — 海胆的胚胎发育（后口无脊椎）"></a>$\mathcal{Lecture}$ $\mathcal{10}$ — 海胆的胚胎发育（后口无脊椎）</h1><h2 id="海胆的卵裂"><a href="#海胆的卵裂" class="headerlink" title="海胆的卵裂"></a>海胆的卵裂</h2><ul>
+<li>第四次卵裂：动物极：中分裂球；植物极：大分裂球和小分裂球</li>
+<li>第五次卵裂：动物极：an1,an2；植物极：大分裂球经向分裂，小分裂球产生<strong>小体积的小分裂球</strong></li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20251129151848522.png" alt="image-20251129151848522"></p>
+<h2 id="原肠运动-1"><a href="#原肠运动-1" class="headerlink" title="原肠运动"></a>原肠运动</h2><h3 id="骨形成间充质细胞内移"><a href="#骨形成间充质细胞内移" class="headerlink" title="骨形成间充质细胞内移"></a>骨形成间充质细胞内移</h3><ul>
+<li>植物极扁平细胞盘中央，一簇<strong>小卵裂球</strong>开始从内表面向囊胚腔中迁移，形成<strong>骨形成间充质细胞</strong></li>
+<li><p>内移机制：<span style="color:red">上皮间充质转换</span>：</p>
+<ol>
+<li>顶-基极性：植物极细胞伸长，形成“植物板”上皮</li>
+<li>小分裂球顶端束紧：远离囊胚腔的地方收缩</li>
+<li>基底膜重塑：小分裂球细胞分泌蛋白酶，在基底膜上消化出一个孔洞</li>
+<li>脱黏附：将细胞黏附在一起的钙粘蛋白被降解，相连细胞分离</li>
+<li>细胞性运动</li>
+</ol>
+</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20251129154856972.png" alt="image-20251129154856972"></p>
+<h3 id="骨形成间充质细胞定位"><a href="#骨形成间充质细胞定位" class="headerlink" title="骨形成间充质细胞定位"></a>骨形成间充质细胞定位</h3><ul>
+<li><strong>在靠近囊胚腔的赤道面</strong>定位，即<strong>预定腹侧区域</strong>，伸出丝状伪足与外胚层细胞固定</li>
+<li>位置信号由<strong>预定外胚层细胞和基底膜</strong>提供，只有骨形成间充质细胞能响应</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20251129155740798.png" alt="image-20251129155740798"></p>
+<h3 id="合胞体索形成"><a href="#合胞体索形成" class="headerlink" title="合胞体索形成"></a>合胞体索形成</h3><ul>
+<li>骨形成间充质细胞线状排列并融合，发育成合胞体索，即形成碳酸钙骨针的基质</li>
+</ul>
+<h3 id="原肠腔的内陷与延伸"><a href="#原肠腔的内陷与延伸" class="headerlink" title="原肠腔的内陷与延伸"></a>原肠腔的内陷与延伸</h3><ul>
+<li><p>内陷机理：植物极板细胞顶端收缩向内隆起+分泌硫酸软骨素到透明素层中吸水膨胀引起透明素层弯曲</p>
+</li>
+<li><p>第一阶段：植物极盘<strong>向囊胚腔内弯曲</strong>和内陷占囊胚腔1/4到1/2的位置处（原肠腔，胚孔）</p>
+</li>
+<li>第二阶段：粗短的原肠基转变成<strong>细长的管道</strong></li>
+<li>第三阶段：<strong>非成骨间充质细胞</strong>伸出丝状伪足将原肠顶端拉向囊胚腔内壁</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20251129161228663.png" alt="image-20251129161228663"></p>
+<h2 id="基因调控网络（GRN）"><a href="#基因调控网络（GRN）" class="headerlink" title="基因调控网络（GRN）"></a>基因调控网络（GRN）</h2><ul>
+<li>特化不同细胞类型的基因之间的相互联系。</li>
+</ul>
+<h3 id="小分裂球的特化第一步：Dishevelled和-beta-catenin（一种Wnt信号通路）"><a href="#小分裂球的特化第一步：Dishevelled和-beta-catenin（一种Wnt信号通路）" class="headerlink" title="小分裂球的特化第一步：Dishevelled和$\beta$-catenin（一种Wnt信号通路）"></a>小分裂球的特化第一步：<strong>Dishevelled和$\beta$-catenin</strong>（一种<strong>Wnt</strong>信号通路）</h3><ul>
+<li>Dishevelled受精前定位于植物极皮质，后被小分裂球继承</li>
+<li>它能阻止$\beta$-catenin降解，使得$\beta$-catenin在小分裂球中积累</li>
+<li>$\beta$-catenin进入细胞核，与TCF转录因子结合，激活特异的基因表达</li>
+</ul>
+<h3 id="小分裂球的特化第二步：Pmar1和HesC（一个双负阀）"><a href="#小分裂球的特化第二步：Pmar1和HesC（一个双负阀）" class="headerlink" title="小分裂球的特化第二步：Pmar1和HesC（一个双负阀）"></a>小分裂球的特化第二步：<strong>Pmar1和HesC</strong>（一个<strong>双负阀</strong>）</h3><ul>
+<li>Otx与$\beta$-catenin/TCF复合物在Pmar1基因的增强子上结合，激活Pmar1转录</li>
+<li>Pmar1阻止HesC转录</li>
+<li>而HesC是另一个抑制性转录因子，Pmar1的表达使得HesC控制的成骨骼基因被激活</li>
+<li>总体效果是：<span style="color:red">抑制一个阻遏物使得被其关闭的基因激活</span></li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20251129164054291.png" alt="image-20251129164054291"></p>
+<h3 id="小分裂球保持特化状态：-正反馈环和前馈回路"><a href="#小分裂球保持特化状态：-正反馈环和前馈回路" class="headerlink" title="小分裂球保持特化状态： 正反馈环和前馈回路"></a>小分裂球保持特化状态： 正反馈环和前馈回路</h3><ul>
+<li>正反馈环：Otx与$\beta$-catenin还会激活Blimp8，再激活Wnt8，再激活自身$\beta$-catenin表达（自分泌调节）</li>
+<li>前馈：<br><img src="/images/Developmental-Boilogy/image-20251129164623180.png" alt="image-20251129164623180"></li>
+</ul>
+<h1 id="mathcal-Lecture-mathcal-11-1-—-两栖类的胚胎发育"><a href="#mathcal-Lecture-mathcal-11-1-—-两栖类的胚胎发育" class="headerlink" title="$\mathcal{Lecture}$ $\mathcal{11-1}$ — 两栖类的胚胎发育"></a>$\mathcal{Lecture}$ $\mathcal{11-1}$ — 两栖类的胚胎发育</h1><h2 id="皮质转动"><a href="#皮质转动" class="headerlink" title="皮质转动"></a>皮质转动</h2><ul>
+<li>皮层细胞质相对内部的卵黄细胞质发生转动，往精子穿入点转移30°</li>
+<li>会产生灰色新月区</li>
+<li>精子入卵点发育成腹部，灰色新月区发育成背部</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20251129192427666.png" alt="image-20251129192427666"></p>
+<h2 id="爪蟾的卵裂"><a href="#爪蟾的卵裂" class="headerlink" title="爪蟾的卵裂"></a>爪蟾的卵裂</h2><ul>
+<li>中量黄卵，移位辐射型卵裂</li>
+<li>在第一次卵裂沟还在分割植物半球富含卵黄的细胞质时，第二次卵裂就已经从动物极开始。这一次的卵裂面与第一次卵裂面垂直，而且也是经向分裂。第三次卵裂是赤道分裂。</li>
+<li>第三次卵裂沟偏向动物极</li>
+</ul>
+<h2 id="原肠运动-2"><a href="#原肠运动-2" class="headerlink" title="原肠运动"></a>原肠运动</h2><ul>
+<li>中囊胚期转换：第12次卵裂时，基因组活化，不同基因开始在不同细胞中转录，卵裂球获得主动运动能力</li>
+<li>外胚层径向穿插：推动了外包的进行</li>
+<li>植物极旋转：使预定咽内胚层细胞靠近囊胚腔，紧位于内卷中胚层上方</li>
+<li>瓶状细胞内陷：灰色新月区的细胞开始内陷，形成缝隙状的胚孔。边缘带细胞内陷形成<strong>瓶状细胞</strong>，并在胚胎表面形成狭缝式唇状结构，成为<strong>胚孔背唇</strong></li>
+<li>胚孔唇位置的内卷：其他中胚层细胞从侧唇或者腹唇卷入，原肠晚期，仍有一团内胚层细胞暴露在植物极表面，称为卵黄栓</li>
+<li>最终卵黄栓也会被包入胚胎内部</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20251129200623893.png" alt="image-20251129200623893"></p>
+<p><img src="/images/Developmental-Boilogy/image-20251129200641919.png" alt="image-20251129200641919"></p>
+<p><img src="/images/Developmental-Boilogy/image-20251129200704860.png" alt="image-20251129200704860"></p>
+<h2 id="中胚层特化"><a href="#中胚层特化" class="headerlink" title="中胚层特化"></a>中胚层特化</h2><ul>
+<li>植物极的母源<em>VegT</em>和<em>Vg1</em> mRNA翻译出VegT和Vg1蛋白</li>
+<li>Vg1诱导未来背部中胚层转录多个Wnt拮抗因子，VegT激活Nodal蛋白表达</li>
+<li>Nodal可以直接激活预定中胚层的VegT表达，同时通过Eomes前馈环激活VegT，完成母源胚胎转换</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20251129202220464.png" alt="image-20251129202220464"></p>
+<h2 id="初级胚胎诱导"><a href="#初级胚胎诱导" class="headerlink" title="初级胚胎诱导"></a>初级胚胎诱导</h2><ul>
+<li>胚孔背唇细胞的后代诱导<strong>背部体轴和神经管</strong>形成</li>
+<li>如果将原肠胚的胚孔背唇细胞移植到另一个正常发育的胚胎的预定腹侧表皮区域，能诱导产生第二个胚孔背唇并形成双头连体胚胎</li>
+<li><span style="color:red">胚孔背唇</span>是<strong>胚胎组织中心</strong>，可以诱导第二体轴的形成</li>
+<li><span style="color:red">胚孔背唇及其后代称为<strong>组织者</strong></span></li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20251129203743705.png" alt="image-20251129203743705"></p>
+<h2 id="体轴形成"><a href="#体轴形成" class="headerlink" title="体轴形成"></a>体轴形成</h2><ul>
+<li>囊胚最背部的植物极细胞能够诱导组织者，即具有起始原肠胚形成的能力，称为Nieuwkoop中心</li>
+<li>Wnt梯度决定前后极性，BMP（骨形态发生蛋白）梯度决定背腹极性</li>
+</ul>
+<h3 id="组织者的形成"><a href="#组织者的形成" class="headerlink" title="组织者的形成"></a>组织者的形成</h3><ul>
+<li>Wnt11 mRNA，Dishevelled和GBP存在于植物极中，受精后沿微管向背部运输</li>
+<li>也可以通过皮质旋转缓慢运输到背部</li>
+<li>Dsh和GBP抑制GSK3的功能，组织降解$\beta$-catenin， Wnt11稳定这一反应</li>
+<li>$\beta$-catenin结合Tcf3，激活siamois和twin表达，这些转录因子再和Nodal相关蛋白（Xnr）、Vg1激活的Smad2共同作用，激活组织者基因（chordin, goosecoid,头蛋白）</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20251129210530677.png" alt="image-20251129210530677"></p>
+<p><img src="/images/Developmental-Boilogy/image-20251129210547089.png" alt="image-20251129210547089"></p>
+<p><img src="/images/Developmental-Boilogy/image-20251129212013997.png" alt="image-20251129212013997"></p>
+<h3 id="左右轴特化"><a href="#左右轴特化" class="headerlink" title="左右轴特化"></a>左右轴特化</h3><ul>
+<li>同源异型基因Pitx2在爪蟾胚胎中不对称表达，引起Xnr1基因只在左侧表达，控制器官的位置</li>
+</ul>
+<h1 id="mathcal-Lecture-mathcal-11-2-—-鱼类（斑马鱼）的胚胎发育"><a href="#mathcal-Lecture-mathcal-11-2-—-鱼类（斑马鱼）的胚胎发育" class="headerlink" title="$\mathcal{Lecture}$ $\mathcal{11-2}$ — 鱼类（斑马鱼）的胚胎发育"></a>$\mathcal{Lecture}$ $\mathcal{11-2}$ — 鱼类（斑马鱼）的胚胎发育</h1><h2 id="卵裂"><a href="#卵裂" class="headerlink" title="卵裂"></a>卵裂</h2><ul>
+<li>端黄卵，盘状不完全卵裂</li>
+<li>动物极形成一个坐落在大的卵黄细胞上的细胞球，这个细胞丘称为<strong>胚胎盘</strong>（包被层与深层细胞）</li>
+<li>卵黄合胞体层：分布在囊胚边缘的细胞将细胞核释放到卵黄细胞质中形成</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20251129215032197.png" alt="image-20251129215032197"></p>
+<h2 id="原肠运动-3"><a href="#原肠运动-3" class="headerlink" title="原肠运动"></a>原肠运动</h2><ul>
+<li>下包：胚盘边缘的细胞发生重排，向<strong>下方（植物极）扩展，并包裹卵黄</strong>。</li>
+<li>胚盾形成：在胚胎的<strong>未来后端</strong>，细胞聚集并形成一个隆起加厚的结构，称为<strong>胚盾</strong>。胚盾就相当于两栖动物的胚孔背唇，是细胞进入胚胎内部的通道。胚盾标志着胚胎的<strong>背侧</strong>和<strong>前后轴</strong>。</li>
+<li>内卷：正在下包的细胞层到达胚盾边缘时，一部分细胞不是继续向外包裹，而是<strong>改变方向，沿着胚盾的边缘向内、向上卷入</strong>胚胎内部。这些内卷的细胞主要是未来的<strong>中胚层</strong>和<strong>内胚层</strong>细胞。表层细胞称为上胚层，内卷的称为下胚层。</li>
+<li>汇聚和延伸：在胚盾出下胚层的集中延伸，在预定背侧形成<strong>脊索中胚层</strong>，即脊索的前体组织。同时发生在上胚层的集中和延伸将预定神经细胞从上胚层带至背部中线，在那里形成<strong>神经龙骨</strong></li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20251129221020942.png" alt="image-20251129221020942"></p>
+<ul>
+<li>胚层分化：上胚层细胞的延伸和内卷诱导出中胚层。卵黄多核体向下扩展依赖于<strong>卵黄囊中的微管</strong>。药物阻断微管聚合，可以抑制外包，同时不发生内卷</li>
+</ul>
+<h2 id="体轴形成-1"><a href="#体轴形成-1" class="headerlink" title="体轴形成"></a>体轴形成</h2><ul>
+<li>胚盾是斑马鱼的胚胎组织中心（组织者）</li>
+<li>背侧$\beta$-catenin聚集，启动Wnt信号通路，激活Nodal相关基因表达，激活Lefty和FGF诱导中内胚层的分化，同时激活BMP拮抗因子Chordin的表达，抑制背侧BMP的表达</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20251129223301820.png" alt="image-20251129223301820"></p>
+<h1 id="mathcal-Lecture-mathcal-12-—-鸟类和哺乳动物的胚胎发育"><a href="#mathcal-Lecture-mathcal-12-—-鸟类和哺乳动物的胚胎发育" class="headerlink" title="$\mathcal{Lecture}$ $\mathcal{12}$ — 鸟类和哺乳动物的胚胎发育"></a>$\mathcal{Lecture}$ $\mathcal{12}$ — 鸟类和哺乳动物的胚胎发育</h1><ul>
+<li>羊膜卵：胚胎发育过程中胎儿体外包有羊膜</li>
+<li>外层绒毛膜，内层卵黄囊、羊膜、羊膜腔、尿囊</li>
+</ul>
+<h2 id="鸟类"><a href="#鸟类" class="headerlink" title="鸟类"></a>鸟类</h2><h3 id="囊胚形成"><a href="#囊胚形成" class="headerlink" title="囊胚形成"></a>囊胚形成</h3><ul>
+<li>端黄卵，盘状不完全卵裂，产生胚盘</li>
+<li>有<strong>胚盘下腔</strong>（即胚盘下的卵黄上没有细胞覆盖，裸露，是鱼类中没有的结构）</li>
+<li>胚盘有<strong>明区</strong>（深层细胞脱落凋亡，只剩一层细胞，发育成胚胎本体）、<strong>暗区</strong>（发育成胚外结构）和<strong>边缘带</strong></li>
+<li>明区后部上胚层增厚，形成<strong>Koller镰型区</strong></li>
+</ul>
+<h3 id="原肠运动-4"><a href="#原肠运动-4" class="headerlink" title="原肠运动"></a>原肠运动</h3><ol>
+<li><strong>下胚层形成</strong>：<ol>
+<li>明区的单个细胞迁移到胚盘下腔中并分裂形成<strong>下胚层岛</strong>；</li>
+<li>迁移过程中形成<strong>初级下胚层</strong>；</li>
+<li>囊胚后端边沿带的细胞深入到胚盘下腔中，将这些细胞岛连接到一起而形成<strong>次级下胚层</strong></li>
+</ol>
+</li>
+<li><strong>原条发生</strong>：<ol>
+<li><strong>原条细胞</strong>起源于<strong>上胚层后端边沿带上的细胞隆起</strong>，然后细胞通过互相穿插、集中和延伸而使原条向头端生长，在下胚层和上胚层细胞之间形成第三胚层</li>
+<li>原条中线下陷形成<strong>原沟</strong></li>
+<li>原条前端有一个加厚区叫<strong>原结（亨氏结）</strong>，此处细胞下陷形成<strong>原窝</strong></li>
+<li>随着次级下胚层细胞从囊胚后端向前端迁移，<strong>原条向着未来的头部生长</strong>，长度增加的同时宽度缩小</li>
+<li>细胞进入原条后经过<strong>EMT</strong>脱离基膜，进入囊胚腔</li>
+</ol>
+</li>
+<li><strong>中内胚层形成</strong>：<ol>
+<li><strong>最先通过亨氏结进入胚胎内部</strong>的细胞是将发育为<strong>前肠咽内胚层</strong>细胞；这些细胞继续向前迁移并最终取代下胚层细胞，导致<strong>下胚层</strong>细胞被限制分布在明区的前端区域，称为<strong>生殖新月</strong>，不发育成任何胚胎结构，但含有<strong>生殖细胞的前体细胞</strong>，最终通过血管迁移到性腺中</li>
+<li><strong>原条前端</strong>进入的向前迁移形成<strong>头部中胚层和脊索</strong>，中后部进入的形成其他大部分的内胚层和居间、侧板、胚外中胚层</li>
+<li>预定内胚层细胞插入并替代下胚层</li>
+</ol>
+</li>
+<li><strong>原条退化</strong>：<ol>
+<li>亨氏结从明区的中部向尾部退缩 ，最终退缩到后端位置<strong>形成肛门</strong></li>
+<li>脊索从未来中脑的位置处开始形成，通过<strong>亨氏结内卷的细胞形成脊索前端</strong>；从<strong>原条内卷的细胞聚集形成躯干脊索</strong>，并延伸到胚胎的尾部</li>
+</ol>
+</li>
+<li>外胚层外包：在预定内胚层和中胚层向内运动的同时，外胚层的前体细胞增殖并<strong>沿着卵黄囊下包最终将其完全包裹</strong></li>
+</ol>
+<p><img src="/images/Developmental-Boilogy/image-20260103205559956.png" alt="image-20260103205559956"></p>
+<p><img src="/images/Developmental-Boilogy/image-20260103204928765.png" alt="image-20260103204928765"></p>
+<ul>
+<li>命运决定：<ol>
+<li>前端及亨氏结进入：头部间质中胚层、索前中胚层、脊索中胚层</li>
+<li>中部两侧进入：内胚层、轴旁中胚层</li>
+<li>后部进入：侧板中胚层、胚外中胚层</li>
+<li>留在外部的上胚层：背侧结构（如神经板）</li>
+<li>远离原条的部分：表皮</li>
+</ol>
+</li>
+</ul>
+<h3 id="体轴形成-2"><a href="#体轴形成-2" class="headerlink" title="体轴形成"></a>体轴形成</h3><ul>
+<li>鸡胚前后轴的特化依赖重力，鸡胚在母鸡子宫中旋转，导致卵黄中<strong>较轻的部分集中到胚盘的单侧</strong>，这里将形成胚胎的<strong>后部</strong>，即<strong>原条发生起始</strong>的置。</li>
+<li>左右轴：Nodal-Pitx2。左侧表达Shh，激活Cerberus, 激活Nodal，激活Pitx2；右侧Shh被Activin和BMP4抑制，同时激活Fgf8，抑制Cerberus；中线上的Lefty阻止Cerberus扩散到右边</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20260103211031193.png" alt="image-20260103211031193"></p>
+<h2 id="哺乳动物"><a href="#哺乳动物" class="headerlink" title="哺乳动物"></a>哺乳动物</h2><h3 id="囊胚形成-1"><a href="#囊胚形成-1" class="headerlink" title="囊胚形成"></a>囊胚形成</h3><ul>
+<li>均黄卵，转动型卵裂，<strong>紧密连接</strong>，内细胞团+滋养层</li>
+<li>细胞特化：<strong>滋养层表达Cdx2，抑制Oct4,Sox2,Nanog</strong>，内细胞团不表达Cdx2，有全能性</li>
+</ul>
+<h3 id="着床"><a href="#着床" class="headerlink" title="着床"></a>着床</h3><ul>
+<li>发育到<strong>胚泡期</strong>在子宫中着床</li>
+<li><strong>蜕膜反应</strong>：在胚泡着床前，卵巢的黄体细胞活跃地分泌<strong>孕酮</strong>，促使子宫内膜对胚泡的压刺和化学刺激具高度敏感，作好着床前的准备</li>
+<li>滋养层细胞膜上的钠/钾泵不断向囊胚腔中转运离子，而使腔内渗透压增加，水分进入囊胚腔而<strong>膨胀扩大</strong>，在这一阶段，为防止胚胎与输卵管的粘着，透明带是必须的。</li>
+<li>到达子宫后细胞膜上的胰酶样蛋白酶在透明带的纤维基质消化出一个洞，再通过囊胚的膨胀压力，<strong>使囊胚从透明带中脱离出来</strong>。囊胚与子宫接触，子宫上皮将囊胚“捕获”而着床</li>
+</ul>
+<h3 id="原肠运动-5"><a href="#原肠运动-5" class="headerlink" title="原肠运动"></a>原肠运动</h3><ol>
+<li>内细胞团分层：上下胚层</li>
+<li>下胚层分离出一层而衬在囊胚腔内，形成<strong>卵黄囊</strong>；上胚层向背部扩展形成<strong>羊膜囊</strong></li>
+<li>原结原条形成，迁移细胞<strong>失去钙粘蛋白</strong>进行迁移</li>
+</ol>
+<p><img src="/images/Developmental-Boilogy/image-20260103212929617.png" alt="image-20260103212929617"></p>
+<p><img src="/images/Developmental-Boilogy/image-20260103213154065.png" alt="image-20260103213154065"></p>
+<h3 id="体轴建立"><a href="#体轴建立" class="headerlink" title="体轴建立"></a>体轴建立</h3><ul>
+<li>两个信号中心：原结、<strong>前部脏壁内胚层（AVE）</strong></li>
+<li>原结负责神经诱导和前后轴模式建立，AVE对原条定位很重要</li>
+<li>前后轴：Wnt,FGF,BMP,RA,Nodal前低后高，前部都是拮抗剂，激活不同的<strong>HOX基因</strong></li>
+<li>左右轴：原结<strong>纤毛</strong>集体左倾并顺时针运动，引起了明显的向左的液流</li>
+</ul>
+<h1 id="mathcal-Lecture-mathcal-13-—-外胚层"><a href="#mathcal-Lecture-mathcal-13-—-外胚层" class="headerlink" title="$\mathcal{Lecture}$ $\mathcal{13}$ — 外胚层"></a>$\mathcal{Lecture}$ $\mathcal{13}$ — 外胚层</h1><h2 id="来源于外胚层的器官"><a href="#来源于外胚层的器官" class="headerlink" title="来源于外胚层的器官"></a>来源于外胚层的器官</h2><ul>
+<li><strong>表皮、神经管/神经板、神经嵴</strong></li>
+<li>神经胚形成：三个外胚层区域在物理上和功能上彼此分离的过程</li>
+<li><strong>神经胚</strong>是原肠胚后的阶段</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20260104103258459.png" alt="image-20260104103258459"></p>
+<h2 id="中枢神经系统发育"><a href="#中枢神经系统发育" class="headerlink" title="中枢神经系统发育"></a>中枢神经系统发育</h2><ul>
+<li><p>神经外胚层诱导：外胚层的<strong>“默认状态”是变成神经组织</strong>的，在高BMP条件下才变成表皮组织，组织者分泌BMP拮抗剂（Chordin,Noggin,Follistatin）在周围形成神经组织</p>
+</li>
+<li><p>神经诱导的前后轴形成：<strong>咽内胚层和索前中胚层分泌Wnt和BMP拮抗剂</strong>，促进头部和大脑形成；<strong>脊索中胚层分泌BMP拮抗剂</strong>，促进躯干脊索形成<img src="/images/Developmental-Boilogy/image-20260104104617434.png" alt="image-20260104104617434"></p>
+</li>
+<li><p>从神经板到神经管：</p>
+<ol>
+<li>神经板表达<strong>Sox1,2,3</strong>，促进神经板特化、阻断BMP</li>
+<li>初级神经管：神经板周围的细胞引导神经板细胞增殖，<strong>内陷</strong>到体内，并与表面的外胚层分离，形成一个下面的<strong>中空管</strong></li>
+<li>次级神经管：起源于<strong>间充质细胞聚集成一条实心索</strong>，随后经历间充质-上皮转换<strong>形成空腔</strong>，合并形成一个空心管（进化上是后发生的，像附肢一样作为脊椎动物伴随尾部延伸而产生的新特性）<img src="/images/Developmental-Boilogy/image-20260104105304357.png" alt="image-20260104105304357"></li>
+</ol>
+</li>
+<li><p>初级神经管形成：神经板伸长和折叠、神经板弯曲、神经褶汇聚、神经管闭合</p>
+<ul>
+<li><strong>铰合点</strong>：内侧铰合区MHP，背外侧铰合区DHLP，细胞<strong>顶端收缩+基部增厚</strong></li>
+<li>分子信号：①<strong>Shh</strong>抑制<strong>Noggin</strong>，阻止铰合点过早或异位形成；②Noggin控制<strong>居间水平的BMP</strong>，BMP抑制铰合点形成，BMP过高不闭合，过低神经管狭窄</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20260104110828984.png" alt="image-20260104110828984"></p>
+</li>
+<li><p>神经管闭合<strong>不是同时发生的</strong>，起始于多个位点。闭合缺陷导致脊柱裂、露脑、无脑畸形、颅脊柱裂等。<strong>叶酸</strong>对于神经管闭合起重要作用。</p>
+</li>
+<li><p>脑的形成：三个初级泡，即前脑、中脑、菱脑（后脑） 。前脑将形成端脑和间脑，菱脑将形成后脑和末脑。<strong>Pax和fgf-8</strong>对脑边界特化有重要作用。</p>
+</li>
+<li><p>神经管背腹轴：脊索分泌的的<strong>Shh信号诱导底板</strong>，表皮分泌的<strong>TGF-$\beta$诱导顶板</strong> </p>
+</li>
+<li><p><strong>神经中胚层祖细胞NMP</strong>通过反向的视黄酸、WNT/FGF信号成熟</p>
+</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20260104113929061.png" alt="image-20260104113929061"></p>
+<h2 id="神经嵴发育"><a href="#神经嵴发育" class="headerlink" title="神经嵴发育"></a>神经嵴发育</h2><ul>
+<li>神经嵴是一种暂时性结构。成体没有神经嵴。</li>
+<li>产生：背侧神经管 EMT，之后它们沿着前后轴迁移，并产生了大量的分化细胞类型</li>
+<li>产生的组织：<ol>
+<li>周围神经系统：感觉、交感和副交感神经系统的神经元，胶质细胞</li>
+<li>内分泌和旁内分泌组织：肾上腺髓质、降钙素分泌细胞</li>
+<li>上皮色素细胞</li>
+<li>头部的许多骨骼与软骨</li>
+<li>结缔组织：角膜内皮和基质、真皮、平滑肌、脂肪组织</li>
+</ol>
+</li>
+<li><strong>“第四胚层”</strong>：神经嵴的出现是动物进化的关键事件之一，它导致了脊椎动物的颌骨、面部、颅骨和两侧感觉神经节的产生。</li>
+<li>区域特化：<ol>
+<li>头颅部神经嵴：头面部神经元、软骨、肌肉、色素，咽弓骨骼中<strong>除了喉软骨</strong>都来自神经嵴</li>
+<li>心脏神经嵴：主动脉弓内皮，甲状腺胸腺部分组织</li>
+<li>躯干神经嵴：腹侧通路形成周围神经元、肾上腺髓质等，背外侧通路形成黑素细胞（<strong>Foxd3</strong>表达下调，<strong>MITF</strong>抑制解除，特化成色素细胞）</li>
+<li>迷走和骶神经嵴：向肠迁移，形成肠管神经节</li>
+</ol>
+</li>
+<li>从神经管中分化需要WNT诱导BMP信号继续保持活性，启动Foxd3, Snail, Sox9, and Sox10表达</li>
+<li>接触抑制机制、相互吸引机制和低水平粘附机制进行<strong>集体迁移</strong></li>
+<li>多潜能干细胞</li>
+</ul>
+<h2 id="感觉原基和表皮发育"><a href="#感觉原基和表皮发育" class="headerlink" title="感觉原基和表皮发育"></a>感觉原基和表皮发育</h2><h3 id="感觉原基"><a href="#感觉原基" class="headerlink" title="感觉原基"></a>感觉原基</h3><ul>
+<li><strong>颅基板</strong>产生人多数与听觉、平衡、嗅觉和味觉相关的头部外围神经元</li>
+<li>形成嗅神经元、前庭耳蜗神经节、<strong>晶状体</strong>、面神经、舌咽神经</li>
+<li>基板形成需要<strong>Wnt在诱导BMP</strong>之后，它自身的表达下调</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20260104133825664.png" alt="image-20260104133825664"></p>
+<ul>
+<li>眼睛发育：晶状体基板是唯一不形成神经元的基板。和脑外翻出来的<strong>视泡相互诱导</strong>。上部外胚层-&gt;晶状体细胞，晶状体基板-&gt;晶状体泡，视泡-&gt;神经视网膜和色素视网膜。BMP和Wnt通路都受到抑制，导致Otx2基因表达</li>
+<li><strong>Shh在脑中央对Pax6 的下调</strong>将脑的眼形成区域分裂成两半。如果Shh不在那里表达，就会产生一个中间的独眼</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20260104134916535.png" alt="image-20260104134916535"></p>
+<h3 id="表皮"><a href="#表皮" class="headerlink" title="表皮"></a>表皮</h3><ul>
+<li>表皮是皮肤的最外层</li>
+<li>表皮干细胞分化受到Notch通路的正向调节</li>
+<li>外胚层附属物：毛发、鳞片、牙齿、汗腺、乳腺</li>
+</ul>
+<h1 id="mathcal-Lecture-mathcal-14-—-中胚层"><a href="#mathcal-Lecture-mathcal-14-—-中胚层" class="headerlink" title="$\mathcal{Lecture}$ $\mathcal{14}$ — 中胚层"></a>$\mathcal{Lecture}$ $\mathcal{14}$ — 中胚层</h1><h2 id="中胚层主要谱系"><a href="#中胚层主要谱系" class="headerlink" title="中胚层主要谱系"></a>中胚层主要谱系</h2><ol>
+<li><strong>脊索中胚层</strong>：神经管下方，脊索是临时结构，成体退化成椎间盘</li>
+<li><strong>轴旁中胚层</strong>：脊索两侧，形成<strong>体节</strong>，又称体节中胚层。最前端不分节，形成头部中胚层，与神经嵴一起发育为<strong>头部的大部分结缔组织和肌肉组织</strong>。</li>
+<li><strong>居间中胚层</strong>：轴旁中胚层外，形成<strong>泌尿生殖系统</strong>，肾脏、性腺及导管、肾上腺皮质</li>
+<li><strong>侧板中胚层</strong>：居间中胚层外，形成<strong>四肢、心脏、血管、血细胞、体腔内层</strong></li>
+</ol>
+<p><img src="/images/Developmental-Boilogy/image-20260104140730127.png" alt="image-20260104140730127"></p>
+<h2 id="轴旁中胚层"><a href="#轴旁中胚层" class="headerlink" title="轴旁中胚层"></a>轴旁中胚层</h2><ul>
+<li>体节形成过程：从前向后，逐步从轴旁中胚层“<strong>出芽</strong>”形成。经历间充质-上皮转换，形成外部上皮细胞包围内部间充质细胞。</li>
+<li>体节主要部分：<ol>
+<li><strong>生骨节</strong>：形成脊椎骨及相关肌腱和肋软骨、背主动脉</li>
+<li><strong>生皮肌节</strong>：产生骨骼肌和背部真皮</li>
+</ol>
+</li>
+<li>轴旁中胚层特化：<strong>中心到两侧的BMP梯度</strong>，分别形成轴旁、居间、侧板，脊索表达Noggin抑制BMP</li>
+<li>HOX基因时间共线性决定体轴前后特异性</li>
+<li>==体节形成分子机制==：<ol>
+<li>控制分化：RA与FGF8/WNT的反向梯度作用于神经中胚层祖细胞NMP，激活Mesogenin1，再激活Tbx6，抑制Sox2，进入轴旁中胚层，否则进入神经管<img src="/images/Developmental-Boilogy/image-20260104143926448.png" alt="image-20260104143926448"></li>
+<li>体节边界发生：<strong>肝配蛋白和肝配蛋白受体Eph-Ephrin</strong>，Mesp的限制性表达，使得肝配蛋白Eph在预定前部边界上调表达，引起其受体Ephrin在前一体节的预定后边界上调表达，调节上皮化，形成体节边界<img src="/images/Developmental-Boilogy/image-20260104144817925.png" alt="image-20260104144817925"></li>
+<li>两侧体节同步形成于分化：<strong>时钟-波阵面模型</strong>，周期性的Delta-Notch分节时钟触发Hox基因的定时激活，一系列同源异型基因在不同体节表达，FGF和RA的浓度梯度波决定了何处形成体节边界。</li>
+</ol>
+</li>
+<li>体节衍生物：肌肉、软骨、椎骨、肌腱、真皮、血管</li>
+<li>生骨节发育：需要来自脊索的Shh信号。有<strong>再分节</strong>现象，分成喙段+尾段，前一节的尾段与后一节的喙段形成一节椎骨，类似昆虫中用副体节构建体节的过程。</li>
+<li>生皮肌节发育：近轴的需要Wnt和低水平的Shh，发育成肋间肌和背部深层肌肉；远轴的需要Wnt和BMP拮抗剂，发育成体壁、四肢肌肉</li>
+<li><strong>卫星细胞</strong>：未融合的肌肉祖细胞，是一种成体干细胞，参与肌肉的修复、生长</li>
+<li>==骨发生==：<ol>
+<li>骨骼谱系：<strong>轴旁</strong>中胚层产生椎骨和颅面骨，<strong>侧板</strong>中胚层产生四肢骨骼，<strong>颅神经峭</strong>产生部分颅面骨和软骨</li>
+<li>膜内成骨：间充质直接转化为骨骼（颅骨和面部骨骼）</li>
+<li>软骨内成骨：间充质-软骨-骨，需要Ihh信号起始成骨细胞向骨分化、血管内皮生长因子诱导毛细血管构建</li>
+</ol>
+</li>
+</ul>
+<h2 id="居间中胚层和侧板中胚层"><a href="#居间中胚层和侧板中胚层" class="headerlink" title="居间中胚层和侧板中胚层"></a>居间中胚层和侧板中胚层</h2><h3 id="居间中胚层发育泌尿生殖系统"><a href="#居间中胚层发育泌尿生殖系统" class="headerlink" title="居间中胚层发育泌尿生殖系统"></a>居间中胚层发育泌尿生殖系统</h3><ul>
+<li>在哺乳动物中，前肾和中肾是短暂的结构，不具有过滤活性。</li>
+<li>中肾对血液发育很重要，在睾丸中作为小管存在。</li>
+<li>后肾是成人的永久肾脏。</li>
+<li>肾脏发育：<strong>后肾间充质和输尿管芽的相互诱导</strong>，输尿管芽分泌FGF/BMP吸纳后阻止间充质凋亡，间充质分泌GDNF诱导输尿管芽基分支，WNT信号将聚集的间充质信号转变为肾单位，最后将输尿管插入膀胱</li>
+</ul>
+<h3 id="侧板中胚层发育体壁、心脏和循环系统"><a href="#侧板中胚层发育体壁、心脏和循环系统" class="headerlink" title="侧板中胚层发育体壁、心脏和循环系统"></a>侧板中胚层发育体壁、心脏和循环系统</h3><ul>
+<li>心脏是第一个功能器官，循环系统是胚胎发育的第一个工作单位</li>
+<li>血管发生：从血岛开始</li>
+<li>新血管生成：从已有血管开始分支</li>
+<li>血细胞发生：造血干细胞HSC，来自主动脉腹侧部分</li>
+<li>幼体造血部位主要是主动脉和肝脏，成体是骨髓</li>
+</ul>
+<h1 id="mathcal-Lecture-mathcal-15-—-内胚层"><a href="#mathcal-Lecture-mathcal-15-—-内胚层" class="headerlink" title="$\mathcal{Lecture}$ $\mathcal{15}$ — 内胚层"></a>$\mathcal{Lecture}$ $\mathcal{15}$ — 内胚层</h1><h2 id="内胚层来源器官"><a href="#内胚层来源器官" class="headerlink" title="内胚层来源器官"></a>内胚层来源器官</h2><ul>
+<li>甲状腺、肺、食道，肝脏、胆囊、胃、胰腺、肠</li>
+<li>发育成何种器官取决于从前到后的Wnt, Fgf4, Bmp梯度</li>
+</ul>
+<h2 id="内胚层发育信号通路"><a href="#内胚层发育信号通路" class="headerlink" title="内胚层发育信号通路"></a>内胚层发育信号通路</h2><ul>
+<li>Nodal-Bon+Fau/Gata5-Cas信号通路激活<strong>Sox17</strong>表达</li>
+</ul>
+<p><img src="/images/Developmental-Boilogy/image-20260104154830187.png" alt="image-20260104154830187"></p>
+<h2 id="内胚层器官发育"><a href="#内胚层器官发育" class="headerlink" title="内胚层器官发育"></a>内胚层器官发育</h2><ol>
+<li>肝脏：肝实质细胞调控代谢，胆管细胞运输胆汁</li>
+<li>胰腺：在不表达Shh的内胚层区域特化，内分泌和外分泌的胰腺起源相同，由Ngn3决定</li>
+<li>中胚层内胚层相互诱导</li>
+</ol>
+<h1 id="mathcal-Lecture-mathcal-16-—-变态与再生"><a href="#mathcal-Lecture-mathcal-16-—-变态与再生" class="headerlink" title="$\mathcal{Lecture}$ $\mathcal{16}$ — 变态与再生"></a>$\mathcal{Lecture}$ $\mathcal{16}$ — 变态与再生</h1><h2 id="变态发育"><a href="#变态发育" class="headerlink" title="变态发育"></a>变态发育</h2><ul>
+<li>初级幼虫/次级幼虫</li>
+<li>两栖类变态关键激素：甲状腺激素（T4甲状腺素向T3三碘甲状腺原酸转变）</li>
+<li>昆虫变态关键激素：20-羟基蜕皮激素、保幼激素</li>
+<li>成年海胆形成于成体雏形；幼虫身体的其余部分经历了程序<br>性的细胞死亡，为生长提供了原材料</li>
+<li>生长、凋亡、重建、再规范</li>
+</ul>
+<h2 id="再生"><a href="#再生" class="headerlink" title="再生"></a>再生</h2><h3 id="干细胞介导的再生（涡虫）"><a href="#干细胞介导的再生（涡虫）" class="headerlink" title="干细胞介导的再生（涡虫）"></a>干细胞介导的再生（涡虫）</h3><ul>
+<li>干细胞允许生物体再生某些已经丢失的器官或组织</li>
+<li>涡虫再生源于<strong>成体多能干细胞</strong>（cNeoblast）形成的<strong>再生胚盘</strong></li>
+<li>前后极性：Notum诱导头部，Erk前高后低，Wnt前低后高</li>
+</ul>
+<h3 id="新建再生（蝾螈四肢和斑马鱼尾鳍）"><a href="#新建再生（蝾螈四肢和斑马鱼尾鳍）" class="headerlink" title="新建再生（蝾螈四肢和斑马鱼尾鳍）"></a>新建再生（蝾螈四肢和斑马鱼尾鳍）</h3><ul>
+<li>成体可以经历去分化，形成相对未分化的细胞团(胚芽)，然后再分化形成新的结构</li>
+<li>再生过程：截肢-表皮增厚形成顶<strong>端表皮帽</strong>（AEC）-组织细胞去分化-<strong>分化成各种谱系限制性祖细胞</strong>-迁移到切面下形成胚芽-形成新结构</li>
+<li>神经和AEC依赖：AEC和附肢轴突周围的神经胶质产生前端梯度蛋白<strong>nAG</strong>，诱导附肢再生</li>
+</ul>
+<h3 id="变形再生（水螅）"><a href="#变形再生（水螅）" class="headerlink" title="变形再生（水螅）"></a>变形再生（水螅）</h3><ul>
+<li>通过<strong>现有组织的重组</strong>(转分化)进行的，几乎没有新的生长。</li>
+<li>三种干细胞：内、外胚层细胞（单一潜能）、间质干细胞（多潜能）。只要有这三种细胞组合起来就能产生出完整的水螅个体</li>
+<li><strong>垂唇</strong>是头部组织中心，有经典Wnt/$\beta-$catenin通路，垂唇被切除后，附近细胞Wnt3上调，诱导现有细胞转分化为头部，没有发生增殖</li>
+<li>水螅也可以新建再生，当上半段切除时，切口处细胞凋亡并释放大量Wnt3,激活下面细胞中Wnt通路，增殖并重新分化处头部</li>
+</ul>
+<h3 id="补偿性再生（哺乳动物肝脏）"><a href="#补偿性再生（哺乳动物肝脏）" class="headerlink" title="补偿性再生（哺乳动物肝脏）"></a>补偿性再生（哺乳动物肝脏）</h3><ul>
+<li>分化的细胞重新进入有丝分裂，但保持其已分化的功能。新的细胞不是来自干细胞，也不是来自成体细胞的去分化。每个细胞产生与自身相似的细胞；没有未分化的组织块形成。</li>
+<li>肝脏祖细胞（hepatic progenitor cells）可以激活并分化，尤其当成熟的肝脏细胞由于衰老或病变无法再生出足够的组织时。</li>
+</ul>
+<h1 id="复习课"><a href="#复习课" class="headerlink" title="复习课"></a>复习课</h1><h2 id="题型"><a href="#题型" class="headerlink" title="题型"></a>题型</h2><ul>
+<li>名词解释 10个 20分</li>
+<li>选择题 中文10个10分+英文10个10分</li>
+<li>判断题 10个 10分</li>
+<li>简答题 6个 30分</li>
+<li>综合论述题 1个 20分</li>
+</ul>
+<h2 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h2><ul>
+<li>如何设计实验研究基因：Loss of function, Gain of function, Rescue</li>
+<li><strong>研究技术</strong>：条件性敲除(Cre/Lox P，FLP/FRT)、基因编辑(CRISPR/Cas9)、RNA表达水平检测(整胚/切片原位杂交)、蛋白检测(免疫组化、免疫荧光)、基因敲低(RNAi, Morpholino)、高通量技术(bulk RNA-seq无法区分细胞类型，single cell RNA-seq测序深度不够，空间转录组学)</li>
+<li>发育过程：<ol>
+<li>性腺发育：性别决定机制与关键基因，性腺中主要细胞类型及其命运调控（信号通路）</li>
+<li>配子发生：精细胞与卵细胞发生的差异（减数分裂），配子过程成熟</li>
+<li>受精：海胆和哺乳动物的比较，精卵结合的物种特异性（识别、顶体反应），阻止多精入卵的机制（快速、慢速两种），卵子代谢激活的机制（快反应、慢反应），雌雄原核融合</li>
+<li>卵裂与囊胚：不同动物中卵子的形式及对应的卵裂方式有哪些，三个新月区（灰色、黄色、生殖），细胞特化方式（自主型、条件型、合胞体），细胞特化与命运决定概念，哺乳动物内细胞团与滋养层（决定内细胞团命运的关键转录因子）</li>
+<li>原肠运动：组织者的解剖位置、功能与机制（分泌一些拮抗BMP的信号因子诱导周围细胞发生变化；腹部发育成表皮的细胞默认命运其实是神经细胞，BMP存在才被诱导成表皮）</li>
+<li>形态发生：母源基因效应，体轴建立（前后轴bicoid/nanos、背腹轴建立机制，信号的浓度梯度），果蝇体节与副体节建立，上皮间充质转换，同源异型基因，细胞程序性死亡</li>
+<li>器官发生：三个胚层的建立过程（外：表皮与神经管、<strong>神经嵴细胞迁移途径</strong>；中：居间/轴旁/侧板中胚层，性腺、肾脏、输尿管来源？内：中内胚层特化出内胚层与中胚层），<strong>类器官？</strong></li>
+</ol>
+</li>
+<li>表观遗传：印迹基因</li>
+<li>再生：设计一个实验证明某个器官中细胞的谱系来源</li>
+<li>==信号通路==：TGF$\beta$-BMP，Shh，FGF，Wnt/$\beta$-catenin，Wnt/YAP，信号通路填图，在什么发育事件中起作用，原理是什么，如何设计实验证明</li>
+</ul>
+<h1 id="中英文术语表"><a href="#中英文术语表" class="headerlink" title="中英文术语表"></a>中英文术语表</h1><p>:arrow_right:  <a href="http://parzival886.github.io/files/Term_list.pdf">Term List</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://parzival886.github.io">Jerry Zheng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://parzival886.github.io/2025/11/29/Developmental-Boilogy/">http://parzival886.github.io/2025/11/29/Developmental-Boilogy/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://parzival886.github.io" target="_blank">Parzival's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/course/">course</a><a class="post-meta__tags" href="/tags/note/">note</a><a class="post-meta__tags" href="/tags/Developmental/">Developmental</a></div><div class="post-share"><div class="social-share" data-image="/img/cover14.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="next-post pull-full" href="/2025/09/21/Cell-Biology/" title="Cell Biology"><img class="cover" src="/img/cover13.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Cell Biology</div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a href="/2024/09/21/Biochemistry/" title="Biochemistry"><img class="cover" src="/img/cover1.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-09-21</div><div class="title">Biochemistry</div></div></a><a href="/2025/02/24/Botany/" title="Botany"><img class="cover" src="/img/cover9.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-02-24</div><div class="title">Botany</div></div></a><a href="/2025/03/09/Computational-Biology/" title="Computational Biology"><img class="cover" src="/img/cover7.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-03-09</div><div class="title">Computational Biology</div></div></a><a href="/2025/09/21/Cell-Biology/" title="Cell Biology"><img class="cover" src="/img/cover13.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-09-21</div><div class="title">Cell Biology</div></div></a><a href="/2024/09/21/Ecology/" title="Ecology"><img class="cover" src="/img/cover2.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-09-21</div><div class="title">Ecology</div></div></a><a href="/2025/09/21/Genetics/" title="Genetics"><img class="cover" src="/img/cover12.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-09-21</div><div class="title">Genetics</div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info is-center"><div class="avatar-img"><img src="/img/1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Jerry Zheng</div><div class="author-info-description">Conquer from within.</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/parzival886"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#mathcal-Lecture-mathcal-1-%E2%80%94-%E7%BB%AA%E8%AE%BA"><span class="toc-number">1.</span> <span class="toc-text">$\mathcal{Lecture}$ $\mathcal{1}$ — 绪论</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%91%E8%82%B2%E7%94%9F%E7%89%A9%E5%AD%A6%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text">发育生物学研究方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A3%E5%90%91%E9%81%97%E4%BC%A0%E5%AD%A6"><span class="toc-number">1.1.1.</span> <span class="toc-text">正向遗传学</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8D%E5%90%91%E9%81%97%E4%BC%A0%E5%AD%A6"><span class="toc-number">1.1.2.</span> <span class="toc-text">反向遗传学</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%9A%E8%83%8E%E8%87%B4%E6%AD%BB%E5%9F%BA%E5%9B%A0%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95"><span class="toc-number">1.1.3.</span> <span class="toc-text">胚胎致死基因研究方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%BA%E5%B7%A5%E8%A1%A8%E8%BE%BE%E8%B0%83%E6%8E%A7"><span class="toc-number">1.1.4.</span> <span class="toc-text">人工表达调控</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E5%9B%A0%E4%BA%92%E4%BD%9C%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95"><span class="toc-number">1.2.</span> <span class="toc-text">基因互作研究方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%86%E8%83%9E%E8%B0%B1%E7%B3%BB%E8%BF%BD%E8%B8%AA"><span class="toc-number">1.3.</span> <span class="toc-text">细胞谱系追踪</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mathcal-Lecture-mathcal-2-%E2%80%94-%E6%A8%A1%E5%BC%8F%E5%8F%91%E7%94%9F%E6%9C%BA%E5%88%B6"><span class="toc-number">2.</span> <span class="toc-text">$\mathcal{Lecture}$ $\mathcal{2}$ — 模式发生机制</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%86%E8%83%9E%E5%AE%9A%E5%9E%8B%E4%B8%8E%E5%88%86%E5%8C%96"><span class="toc-number">2.1.</span> <span class="toc-text">细胞定型与分化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E5%8C%96%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F"><span class="toc-number">2.2.</span> <span class="toc-text">特化的三种方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E4%B8%BB%E5%9E%8B%EF%BC%88%E9%95%B6%E5%B5%8C%E5%9E%8B%EF%BC%89%E7%89%B9%E5%8C%96%EF%BC%88autonomous-specification%EF%BC%89"><span class="toc-number">2.2.1.</span> <span class="toc-text">自主型（镶嵌型）特化（autonomous specification）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B0%83%E6%95%B4%E5%9E%8B%EF%BC%88%E6%9D%A1%E4%BB%B6%E5%9E%8B%EF%BC%89%E7%89%B9%E5%8C%96%EF%BC%88conditional-specification%EF%BC%89"><span class="toc-number">2.2.2.</span> <span class="toc-text">调整型（条件型）特化（conditional specification）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%88%E8%83%9E%E4%BD%93%E7%89%B9%E5%8C%96%EF%BC%88syncyital-specification%EF%BC%89"><span class="toc-number">2.2.3.</span> <span class="toc-text">合胞体特化（syncyital specification）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%86%E8%83%9E%E5%88%86%E5%8C%96%E6%9C%BA%E5%88%B6%EF%BC%9A%E4%B8%8D%E5%90%8C%E5%9F%BA%E5%9B%A0%E7%9A%84%E8%A1%A8%E8%BE%BE"><span class="toc-number">2.3.</span> <span class="toc-text">细胞分化机制：不同基因的表达</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mathcal-Lecture-mathcal-3-%E2%80%94-%E5%BD%A2%E6%80%81%E5%8F%91%E7%94%9F%E6%9C%BA%E5%88%B6"><span class="toc-number">3.</span> <span class="toc-text">$\mathcal{Lecture}$ $\mathcal{3}$ — 形态发生机制</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%A2%E6%80%81%E5%8F%91%E7%94%9F"><span class="toc-number">3.1.</span> <span class="toc-text">形态发生</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%86%E8%83%9E%E9%BB%8F%E9%99%84%E4%B8%8E%E5%88%86%E9%80%89"><span class="toc-number">3.2.</span> <span class="toc-text">细胞黏附与分选</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%86%E8%83%9E%E5%A4%96%E5%9F%BA%E8%B4%A8%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.3.</span> <span class="toc-text">细胞外基质信号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8A%E7%9A%AE-%E9%97%B4%E5%85%85%E8%B4%A8%E8%BD%AC%E6%8D%A2"><span class="toc-number">3.4.</span> <span class="toc-text">上皮-间充质转换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%86%E8%83%9E%E4%BF%A1%E5%8F%B7%E4%BC%A0%E5%AF%BC"><span class="toc-number">3.5.</span> <span class="toc-text">细胞信号传导</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%81%E5%88%86%E6%B3%8C%E4%BF%A1%E5%8F%B7%EF%BC%88paracrine-factor%EF%BC%89"><span class="toc-number">3.6.</span> <span class="toc-text">旁分泌信号（paracrine factor）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%91%E5%88%86%E6%B3%8C%E4%BF%A1%E5%8F%B7%EF%BC%88contact-dependent%EF%BC%89"><span class="toc-number">3.7.</span> <span class="toc-text">近分泌信号（contact dependent）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mathcal-Lecture-mathcal-4-%E2%80%94-%E5%B9%B2%E7%BB%86%E8%83%9E"><span class="toc-number">4.</span> <span class="toc-text">$\mathcal{Lecture}$ $\mathcal{4}$ — 干细胞</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mathcal-Lecture-mathcal-5-%E2%80%94-%E6%80%A7%E5%88%AB%E5%86%B3%E5%AE%9A%E4%B8%8E%E9%85%8D%E5%AD%90%E5%8F%91%E7%94%9F"><span class="toc-number">5.</span> <span class="toc-text">$\mathcal{Lecture}$ $\mathcal{5}$ — 性别决定与配子发生</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%93%E8%89%B2%E4%BD%93%E6%80%A7%E5%88%AB%E5%86%B3%E5%AE%9A"><span class="toc-number">5.1.</span> <span class="toc-text">染色体性别决定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%93%BA%E4%B9%B3%E5%8A%A8%E7%89%A9%E5%88%9D%E7%BA%A7%E6%80%A7%E5%88%AB%E5%86%B3%E5%AE%9A%E7%9A%84%E6%9C%BA%E5%88%B6"><span class="toc-number">5.2.</span> <span class="toc-text">&#x3D;&#x3D;哺乳动物初级性别决定的机制&#x3D;&#x3D;</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%84%E6%80%A7"><span class="toc-number">5.2.1.</span> <span class="toc-text">雄性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%8C%E6%80%A7"><span class="toc-number">5.2.2.</span> <span class="toc-text">雌性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%9C%E8%9D%87%E6%80%A7%E5%88%AB%E5%86%B3%E5%AE%9A"><span class="toc-number">5.3.</span> <span class="toc-text">&#x3D;&#x3D;果蝇性别决定&#x3D;&#x3D;</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E5%AD%90%E6%9C%BA%E5%88%B6"><span class="toc-number">5.3.1.</span> <span class="toc-text">分子机制</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E6%80%A7%E5%88%AB%E5%86%B3%E5%AE%9A"><span class="toc-number">5.4.</span> <span class="toc-text">环境性别决定</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E5%A7%8B%E7%94%9F%E6%AE%96%E7%BB%86%E8%83%9E%E8%BF%81%E7%A7%BB"><span class="toc-number">5.5.</span> <span class="toc-text">原始生殖细胞迁移</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%8F%E6%95%B0%E5%88%86%E8%A3%82"><span class="toc-number">5.6.</span> <span class="toc-text">减数分裂</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%93%BA%E4%B9%B3%E5%8A%A8%E7%89%A9%E7%B2%BE%E5%AD%90%E5%8F%91%E7%94%9FSpermatogenesis"><span class="toc-number">5.7.</span> <span class="toc-text">哺乳动物精子发生Spermatogenesis</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%93%BA%E4%B9%B3%E5%8A%A8%E7%89%A9%E5%8D%B5%E5%AD%90%E5%8F%91%E7%94%9F-Oogenesis"><span class="toc-number">5.8.</span> <span class="toc-text">哺乳动物卵子发生 Oogenesis</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mathcal-Lecture-mathcal-6-%E2%80%94-%E5%8F%97%E7%B2%BE"><span class="toc-number">6.</span> <span class="toc-text">$\mathcal{Lecture}$ $\mathcal{6}$ — 受精</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%B7%E8%83%86%E4%BD%93%E5%A4%96%E5%8F%97%E7%B2%BE"><span class="toc-number">6.1.</span> <span class="toc-text">海胆体外受精</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%93%BA%E4%B9%B3%E5%8A%A8%E7%89%A9%E4%BD%93%E5%86%85%E5%8F%97%E7%B2%BE"><span class="toc-number">6.2.</span> <span class="toc-text">哺乳动物体内受精</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A4%E9%9B%8C%E7%94%9F%E6%AE%96%E5%92%8C%E9%9B%8C%E6%A0%B8%E5%8F%91%E8%82%B2"><span class="toc-number">6.3.</span> <span class="toc-text">孤雌生殖和雌核发育</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mathcal-Lecture-mathcal-7-%E2%80%94-%E5%8D%B5%E8%A3%82%E3%80%81%E5%9B%8A%E8%83%9A%E5%92%8C%E5%8E%9F%E8%82%A0%E8%BF%90%E5%8A%A8"><span class="toc-number">7.</span> <span class="toc-text">$\mathcal{Lecture}$ $\mathcal{7}$ — 卵裂、囊胚和原肠运动</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%B5%E8%A3%82%EF%BC%88cleavage%EF%BC%89"><span class="toc-number">7.1.</span> <span class="toc-text">卵裂（cleavage）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%A8%E8%A3%82%EF%BC%88%E5%9D%87%E9%BB%84%E5%8D%B5%E5%92%8C%E4%B8%AD%E9%87%8F%E9%BB%84%E5%8D%B5%EF%BC%89"><span class="toc-number">7.1.1.</span> <span class="toc-text">全裂（均黄卵和中量黄卵）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E5%85%A8%E8%A3%82%EF%BC%88%E7%AB%AF%E9%BB%84%E5%8D%B5%E5%92%8C%E4%B8%AD%E5%A4%AE%E9%BB%84%E5%8D%B5%EF%BC%89"><span class="toc-number">7.1.2.</span> <span class="toc-text">不全裂（端黄卵和中央黄卵）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%B5%E8%A3%82%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-number">7.1.3.</span> <span class="toc-text">卵裂的特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%B5%E8%A3%82%E4%B8%8E%E8%BF%9B%E5%8C%96"><span class="toc-number">7.1.4.</span> <span class="toc-text">卵裂与进化</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%8A%E8%83%9A"><span class="toc-number">7.2.</span> <span class="toc-text">囊胚</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E8%82%A0%E8%BF%90%E5%8A%A8"><span class="toc-number">7.3.</span> <span class="toc-text">原肠运动</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mathcal-Lecture-mathcal-8-%E2%80%94-%E8%9E%BA%E5%92%8C%E7%BA%BF%E8%99%AB%E7%9A%84%E8%83%9A%E8%83%8E%E5%8F%91%E8%82%B2%EF%BC%88%E5%8E%9F%E5%8F%A3%E6%97%A0%E8%84%8A%E6%A4%8E%EF%BC%89"><span class="toc-number">8.</span> <span class="toc-text">$\mathcal{Lecture}$ $\mathcal{8}$ — 螺和线虫的胚胎发育（原口无脊椎）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%9E%BA"><span class="toc-number">8.1.</span> <span class="toc-text">螺</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E8%99%AB"><span class="toc-number">8.2.</span> <span class="toc-text">线虫</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mathcal-Lecture-mathcal-9-%E2%80%94-%E6%9E%9C%E8%9D%87%E7%9A%84%E8%83%9A%E8%83%8E%E5%8F%91%E8%82%B2%EF%BC%88%E4%BD%93%E8%BD%B4%E7%89%B9%E5%8C%96%EF%BC%89"><span class="toc-number">9.</span> <span class="toc-text">$\mathcal{Lecture}$ $\mathcal{9}$ — 果蝇的胚胎发育（体轴特化）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mathcal-Lecture-mathcal-10-%E2%80%94-%E6%B5%B7%E8%83%86%E7%9A%84%E8%83%9A%E8%83%8E%E5%8F%91%E8%82%B2%EF%BC%88%E5%90%8E%E5%8F%A3%E6%97%A0%E8%84%8A%E6%A4%8E%EF%BC%89"><span class="toc-number">10.</span> <span class="toc-text">$\mathcal{Lecture}$ $\mathcal{10}$ — 海胆的胚胎发育（后口无脊椎）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%B7%E8%83%86%E7%9A%84%E5%8D%B5%E8%A3%82"><span class="toc-number">10.1.</span> <span class="toc-text">海胆的卵裂</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E8%82%A0%E8%BF%90%E5%8A%A8-1"><span class="toc-number">10.2.</span> <span class="toc-text">原肠运动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AA%A8%E5%BD%A2%E6%88%90%E9%97%B4%E5%85%85%E8%B4%A8%E7%BB%86%E8%83%9E%E5%86%85%E7%A7%BB"><span class="toc-number">10.2.1.</span> <span class="toc-text">骨形成间充质细胞内移</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AA%A8%E5%BD%A2%E6%88%90%E9%97%B4%E5%85%85%E8%B4%A8%E7%BB%86%E8%83%9E%E5%AE%9A%E4%BD%8D"><span class="toc-number">10.2.2.</span> <span class="toc-text">骨形成间充质细胞定位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%88%E8%83%9E%E4%BD%93%E7%B4%A2%E5%BD%A2%E6%88%90"><span class="toc-number">10.2.3.</span> <span class="toc-text">合胞体索形成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E8%82%A0%E8%85%94%E7%9A%84%E5%86%85%E9%99%B7%E4%B8%8E%E5%BB%B6%E4%BC%B8"><span class="toc-number">10.2.4.</span> <span class="toc-text">原肠腔的内陷与延伸</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E5%9B%A0%E8%B0%83%E6%8E%A7%E7%BD%91%E7%BB%9C%EF%BC%88GRN%EF%BC%89"><span class="toc-number">10.3.</span> <span class="toc-text">基因调控网络（GRN）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%8F%E5%88%86%E8%A3%82%E7%90%83%E7%9A%84%E7%89%B9%E5%8C%96%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9ADishevelled%E5%92%8C-beta-catenin%EF%BC%88%E4%B8%80%E7%A7%8DWnt%E4%BF%A1%E5%8F%B7%E9%80%9A%E8%B7%AF%EF%BC%89"><span class="toc-number">10.3.1.</span> <span class="toc-text">小分裂球的特化第一步：Dishevelled和$\beta$-catenin（一种Wnt信号通路）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%8F%E5%88%86%E8%A3%82%E7%90%83%E7%9A%84%E7%89%B9%E5%8C%96%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9APmar1%E5%92%8CHesC%EF%BC%88%E4%B8%80%E4%B8%AA%E5%8F%8C%E8%B4%9F%E9%98%80%EF%BC%89"><span class="toc-number">10.3.2.</span> <span class="toc-text">小分裂球的特化第二步：Pmar1和HesC（一个双负阀）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%8F%E5%88%86%E8%A3%82%E7%90%83%E4%BF%9D%E6%8C%81%E7%89%B9%E5%8C%96%E7%8A%B6%E6%80%81%EF%BC%9A-%E6%AD%A3%E5%8F%8D%E9%A6%88%E7%8E%AF%E5%92%8C%E5%89%8D%E9%A6%88%E5%9B%9E%E8%B7%AF"><span class="toc-number">10.3.3.</span> <span class="toc-text">小分裂球保持特化状态： 正反馈环和前馈回路</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mathcal-Lecture-mathcal-11-1-%E2%80%94-%E4%B8%A4%E6%A0%96%E7%B1%BB%E7%9A%84%E8%83%9A%E8%83%8E%E5%8F%91%E8%82%B2"><span class="toc-number">11.</span> <span class="toc-text">$\mathcal{Lecture}$ $\mathcal{11-1}$ — 两栖类的胚胎发育</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9A%AE%E8%B4%A8%E8%BD%AC%E5%8A%A8"><span class="toc-number">11.1.</span> <span class="toc-text">皮质转动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%88%AA%E8%9F%BE%E7%9A%84%E5%8D%B5%E8%A3%82"><span class="toc-number">11.2.</span> <span class="toc-text">爪蟾的卵裂</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E8%82%A0%E8%BF%90%E5%8A%A8-2"><span class="toc-number">11.3.</span> <span class="toc-text">原肠运动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%AD%E8%83%9A%E5%B1%82%E7%89%B9%E5%8C%96"><span class="toc-number">11.4.</span> <span class="toc-text">中胚层特化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E7%BA%A7%E8%83%9A%E8%83%8E%E8%AF%B1%E5%AF%BC"><span class="toc-number">11.5.</span> <span class="toc-text">初级胚胎诱导</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%93%E8%BD%B4%E5%BD%A2%E6%88%90"><span class="toc-number">11.6.</span> <span class="toc-text">体轴形成</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%84%E7%BB%87%E8%80%85%E7%9A%84%E5%BD%A2%E6%88%90"><span class="toc-number">11.6.1.</span> <span class="toc-text">组织者的形成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A6%E5%8F%B3%E8%BD%B4%E7%89%B9%E5%8C%96"><span class="toc-number">11.6.2.</span> <span class="toc-text">左右轴特化</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mathcal-Lecture-mathcal-11-2-%E2%80%94-%E9%B1%BC%E7%B1%BB%EF%BC%88%E6%96%91%E9%A9%AC%E9%B1%BC%EF%BC%89%E7%9A%84%E8%83%9A%E8%83%8E%E5%8F%91%E8%82%B2"><span class="toc-number">12.</span> <span class="toc-text">$\mathcal{Lecture}$ $\mathcal{11-2}$ — 鱼类（斑马鱼）的胚胎发育</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%B5%E8%A3%82"><span class="toc-number">12.1.</span> <span class="toc-text">卵裂</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E8%82%A0%E8%BF%90%E5%8A%A8-3"><span class="toc-number">12.2.</span> <span class="toc-text">原肠运动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%93%E8%BD%B4%E5%BD%A2%E6%88%90-1"><span class="toc-number">12.3.</span> <span class="toc-text">体轴形成</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mathcal-Lecture-mathcal-12-%E2%80%94-%E9%B8%9F%E7%B1%BB%E5%92%8C%E5%93%BA%E4%B9%B3%E5%8A%A8%E7%89%A9%E7%9A%84%E8%83%9A%E8%83%8E%E5%8F%91%E8%82%B2"><span class="toc-number">13.</span> <span class="toc-text">$\mathcal{Lecture}$ $\mathcal{12}$ — 鸟类和哺乳动物的胚胎发育</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%B8%9F%E7%B1%BB"><span class="toc-number">13.1.</span> <span class="toc-text">鸟类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%8A%E8%83%9A%E5%BD%A2%E6%88%90"><span class="toc-number">13.1.1.</span> <span class="toc-text">囊胚形成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E8%82%A0%E8%BF%90%E5%8A%A8-4"><span class="toc-number">13.1.2.</span> <span class="toc-text">原肠运动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%93%E8%BD%B4%E5%BD%A2%E6%88%90-2"><span class="toc-number">13.1.3.</span> <span class="toc-text">体轴形成</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%93%BA%E4%B9%B3%E5%8A%A8%E7%89%A9"><span class="toc-number">13.2.</span> <span class="toc-text">哺乳动物</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%8A%E8%83%9A%E5%BD%A2%E6%88%90-1"><span class="toc-number">13.2.1.</span> <span class="toc-text">囊胚形成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9D%80%E5%BA%8A"><span class="toc-number">13.2.2.</span> <span class="toc-text">着床</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E8%82%A0%E8%BF%90%E5%8A%A8-5"><span class="toc-number">13.2.3.</span> <span class="toc-text">原肠运动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%93%E8%BD%B4%E5%BB%BA%E7%AB%8B"><span class="toc-number">13.2.4.</span> <span class="toc-text">体轴建立</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mathcal-Lecture-mathcal-13-%E2%80%94-%E5%A4%96%E8%83%9A%E5%B1%82"><span class="toc-number">14.</span> <span class="toc-text">$\mathcal{Lecture}$ $\mathcal{13}$ — 外胚层</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%A5%E6%BA%90%E4%BA%8E%E5%A4%96%E8%83%9A%E5%B1%82%E7%9A%84%E5%99%A8%E5%AE%98"><span class="toc-number">14.1.</span> <span class="toc-text">来源于外胚层的器官</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%AD%E6%9E%A2%E7%A5%9E%E7%BB%8F%E7%B3%BB%E7%BB%9F%E5%8F%91%E8%82%B2"><span class="toc-number">14.2.</span> <span class="toc-text">中枢神经系统发育</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A5%9E%E7%BB%8F%E5%B5%B4%E5%8F%91%E8%82%B2"><span class="toc-number">14.3.</span> <span class="toc-text">神经嵴发育</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%84%9F%E8%A7%89%E5%8E%9F%E5%9F%BA%E5%92%8C%E8%A1%A8%E7%9A%AE%E5%8F%91%E8%82%B2"><span class="toc-number">14.4.</span> <span class="toc-text">感觉原基和表皮发育</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%84%9F%E8%A7%89%E5%8E%9F%E5%9F%BA"><span class="toc-number">14.4.1.</span> <span class="toc-text">感觉原基</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E7%9A%AE"><span class="toc-number">14.4.2.</span> <span class="toc-text">表皮</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mathcal-Lecture-mathcal-14-%E2%80%94-%E4%B8%AD%E8%83%9A%E5%B1%82"><span class="toc-number">15.</span> <span class="toc-text">$\mathcal{Lecture}$ $\mathcal{14}$ — 中胚层</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%AD%E8%83%9A%E5%B1%82%E4%B8%BB%E8%A6%81%E8%B0%B1%E7%B3%BB"><span class="toc-number">15.1.</span> <span class="toc-text">中胚层主要谱系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%B4%E6%97%81%E4%B8%AD%E8%83%9A%E5%B1%82"><span class="toc-number">15.2.</span> <span class="toc-text">轴旁中胚层</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B1%85%E9%97%B4%E4%B8%AD%E8%83%9A%E5%B1%82%E5%92%8C%E4%BE%A7%E6%9D%BF%E4%B8%AD%E8%83%9A%E5%B1%82"><span class="toc-number">15.3.</span> <span class="toc-text">居间中胚层和侧板中胚层</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B1%85%E9%97%B4%E4%B8%AD%E8%83%9A%E5%B1%82%E5%8F%91%E8%82%B2%E6%B3%8C%E5%B0%BF%E7%94%9F%E6%AE%96%E7%B3%BB%E7%BB%9F"><span class="toc-number">15.3.1.</span> <span class="toc-text">居间中胚层发育泌尿生殖系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%A7%E6%9D%BF%E4%B8%AD%E8%83%9A%E5%B1%82%E5%8F%91%E8%82%B2%E4%BD%93%E5%A3%81%E3%80%81%E5%BF%83%E8%84%8F%E5%92%8C%E5%BE%AA%E7%8E%AF%E7%B3%BB%E7%BB%9F"><span class="toc-number">15.3.2.</span> <span class="toc-text">侧板中胚层发育体壁、心脏和循环系统</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mathcal-Lecture-mathcal-15-%E2%80%94-%E5%86%85%E8%83%9A%E5%B1%82"><span class="toc-number">16.</span> <span class="toc-text">$\mathcal{Lecture}$ $\mathcal{15}$ — 内胚层</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E8%83%9A%E5%B1%82%E6%9D%A5%E6%BA%90%E5%99%A8%E5%AE%98"><span class="toc-number">16.1.</span> <span class="toc-text">内胚层来源器官</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E8%83%9A%E5%B1%82%E5%8F%91%E8%82%B2%E4%BF%A1%E5%8F%B7%E9%80%9A%E8%B7%AF"><span class="toc-number">16.2.</span> <span class="toc-text">内胚层发育信号通路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E8%83%9A%E5%B1%82%E5%99%A8%E5%AE%98%E5%8F%91%E8%82%B2"><span class="toc-number">16.3.</span> <span class="toc-text">内胚层器官发育</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mathcal-Lecture-mathcal-16-%E2%80%94-%E5%8F%98%E6%80%81%E4%B8%8E%E5%86%8D%E7%94%9F"><span class="toc-number">17.</span> <span class="toc-text">$\mathcal{Lecture}$ $\mathcal{16}$ — 变态与再生</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%98%E6%80%81%E5%8F%91%E8%82%B2"><span class="toc-number">17.1.</span> <span class="toc-text">变态发育</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%8D%E7%94%9F"><span class="toc-number">17.2.</span> <span class="toc-text">再生</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B9%B2%E7%BB%86%E8%83%9E%E4%BB%8B%E5%AF%BC%E7%9A%84%E5%86%8D%E7%94%9F%EF%BC%88%E6%B6%A1%E8%99%AB%EF%BC%89"><span class="toc-number">17.2.1.</span> <span class="toc-text">干细胞介导的再生（涡虫）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E5%86%8D%E7%94%9F%EF%BC%88%E8%9D%BE%E8%9E%88%E5%9B%9B%E8%82%A2%E5%92%8C%E6%96%91%E9%A9%AC%E9%B1%BC%E5%B0%BE%E9%B3%8D%EF%BC%89"><span class="toc-number">17.2.2.</span> <span class="toc-text">新建再生（蝾螈四肢和斑马鱼尾鳍）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E5%BD%A2%E5%86%8D%E7%94%9F%EF%BC%88%E6%B0%B4%E8%9E%85%EF%BC%89"><span class="toc-number">17.2.3.</span> <span class="toc-text">变形再生（水螅）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A5%E5%81%BF%E6%80%A7%E5%86%8D%E7%94%9F%EF%BC%88%E5%93%BA%E4%B9%B3%E5%8A%A8%E7%89%A9%E8%82%9D%E8%84%8F%EF%BC%89"><span class="toc-number">17.2.4.</span> <span class="toc-text">补偿性再生（哺乳动物肝脏）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A4%8D%E4%B9%A0%E8%AF%BE"><span class="toc-number">18.</span> <span class="toc-text">复习课</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E5%9E%8B"><span class="toc-number">18.1.</span> <span class="toc-text">题型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E7%82%B9"><span class="toc-number">18.2.</span> <span class="toc-text">重点</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%AD%E8%8B%B1%E6%96%87%E6%9C%AF%E8%AF%AD%E8%A1%A8"><span class="toc-number">19.</span> <span class="toc-text">中英文术语表</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/11/29/Developmental-Boilogy/" title="Developmental Boilogy"><img src="/img/cover14.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Developmental Boilogy"/></a><div class="content"><a class="title" href="/2025/11/29/Developmental-Boilogy/" title="Developmental Boilogy">Developmental Boilogy</a><time datetime="2025-11-29T07:01:15.000Z" title="发表于 2025-11-29 15:01:15">2025-11-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/09/21/Cell-Biology/" title="Cell Biology"><img src="/img/cover13.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Cell Biology"/></a><div class="content"><a class="title" href="/2025/09/21/Cell-Biology/" title="Cell Biology">Cell Biology</a><time datetime="2025-09-21T14:20:36.000Z" title="发表于 2025-09-21 22:20:36">2025-09-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/09/21/Genetics/" title="Genetics"><img src="/img/cover12.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Genetics"/></a><div class="content"><a class="title" href="/2025/09/21/Genetics/" title="Genetics">Genetics</a><time datetime="2025-09-21T14:19:11.000Z" title="发表于 2025-09-21 22:19:11">2025-09-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/06/18/Zoology/" title="Zoology"><img src="/img/cover10.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Zoology"/></a><div class="content"><a class="title" href="/2025/06/18/Zoology/" title="Zoology">Zoology</a><time datetime="2025-06-18T01:43:56.000Z" title="发表于 2025-06-18 09:43:56">2025-06-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/03/09/Computational-Biology/" title="Computational Biology"><img src="/img/cover7.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Computational Biology"/></a><div class="content"><a class="title" href="/2025/03/09/Computational-Biology/" title="Computational Biology">Computational Biology</a><time datetime="2025-03-09T10:25:16.000Z" title="发表于 2025-03-09 18:25:16">2025-03-09</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2026 By Jerry Zheng</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+      
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/nipsilon.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body></html>
